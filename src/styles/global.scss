@@ -1,0 +1,28 @@
+@import "./variable.scss";
+
+body {
+  background-color: $gray_bcg;
+
+  p {
+    color: $gray;
+    font-family: $barlow, sans-serif;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-family: $barlow, sans-serif;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: $barlow, sans-serif;
+    color: $vert;
+  }
+
+  h3 {
+    font-family: $libre, serif;
+    text-transform: uppercase;
+    ;
+  }
+}
