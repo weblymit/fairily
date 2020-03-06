@@ -66,6 +66,9 @@ class Navigation extends Component {
 export default Navigation;
 
 const DivNav = styled.div`
+	.bg-light {
+		background-color: #fff!important;
+	}
 	.navbar-nav {
 		text-align: center;
 		/* background-color: #000; */
