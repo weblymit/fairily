@@ -21,7 +21,7 @@ const JumbotronHome = ({ className }) => {
 	const jumbo = data.jumbo.childImageSharp.fluid;
 	return (
 		<Div>
-			<BackgroundImage Tag="div" className={className} fluid={jumbo} backgroundColor={`#040e18`}>
+			<BackgroundImage Tag="div" className={className} fluid={jumbo} backgroundColor={`#aec9ba`}>
 				{/* <Jumbotron fluid>
 					<Container>
 						<h1>Fairily</h1>
@@ -38,7 +38,7 @@ const StyledBackgroundSection = styled(JumbotronHome)`
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 64%);
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 55%);
   
 `;
 
@@ -56,5 +56,3 @@ const Div = styled.div`
 		}
 	}
 `;
-
-

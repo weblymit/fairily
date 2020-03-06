@@ -16,7 +16,7 @@ const NavLink = ({ navLink, linkHref }) => {
 		<>
 			<Link
 				to={linkHref}
-				className='nav-link text-uppercase'
+				className='nav-link'
 				style={style}
 				activeStyle={activeStyle}
 				>{navLink}</Link>

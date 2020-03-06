@@ -54,20 +54,24 @@ const FooterDiv = styled.footer`
 	li {
 		padding: 0 30px;
 		border-right: 1px solid;
+
+		&:last-child {
+			border-right: 0;
+		}
 	}
 
 	.svg-inline--fa {
-    width: 4rem;
-    font-size: 2rem;
-  }
-  
-  hr {
-    margin-top: 100px;
-    margin-bottom: 35px;
-  }
+		width: 4rem;
+		font-size: 2rem;
+	}
 
-  .copyright {
-    font-family: 'Archivo', sans-serif;
-    font-size: 8px;
-  }
+	hr {
+		margin-top: 100px;
+		margin-bottom: 35px;
+	}
+
+	.copyright {
+		font-family: 'Archivo', sans-serif;
+		font-size: 8px;
+	}
 `;

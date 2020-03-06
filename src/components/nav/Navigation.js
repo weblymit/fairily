@@ -50,10 +50,10 @@ class Navigation extends Component {
 						</Navbar.Toggle>
 						<Navbar.Collapse id="basic-navbar-nav">
 							<Nav className="ml-auto" id="myNavigation">
-								<NavLink navLink="item1" linkHref="#" />
-								<NavLink navLink="item2" linkHref="#" />
-								<NavLink navLink="item3" linkHref="#" />
-								<NavLink navLink="item4" linkHref="#" />
+								<NavLink navLink="Notre concept" linkHref="#" />
+								<NavLink navLink="Notre expérience" linkHref="#" />
+								<NavLink navLink="Notre communauté " linkHref="#" />
+								<NavLink navLink="Votre parcours" linkHref="#" />
 							</Nav>
 						</Navbar.Collapse>
 					</Container>
@@ -67,7 +67,7 @@ export default Navigation;
 
 const DivNav = styled.div`
 	.bg-light {
-		background-color: #fff!important;
+		background-color: #fff !important;
 	}
 	.navbar-nav {
 		text-align: center;
@@ -75,7 +75,11 @@ const DivNav = styled.div`
 	}
 
 	.navbar-expand-lg .navbar-nav .nav-link {
-		padding: 0 50px;
-		border-right: 1px solid ;
+		padding: 0 30px;
+		border-right: 1px solid;
+
+		&:last-child {
+			border-right: 0;
+		}
 	}
 `;
