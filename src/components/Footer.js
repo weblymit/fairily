@@ -65,4 +65,9 @@ const FooterDiv = styled.footer`
     margin-top: 100px;
     margin-bottom: 35px;
   }
+
+  .copyright {
+    font-family: 'Archivo', sans-serif;
+    font-size: 8px;
+  }
 `;

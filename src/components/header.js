@@ -1,11 +1,13 @@
 import React from 'react';
-import Navigation from '../components/nav/Navigation'
+import Navigation from '../components/nav/Navigation';
+import Jumbotron from '../components/Jumbotron';
 
 const Header = () => {
 	return (
-    <div>
-      <Navigation />
-			<h1>Header</h1>
+		<div>
+			<Navigation />
+			
+			<Jumbotron />
 		</div>
 	);
 };
