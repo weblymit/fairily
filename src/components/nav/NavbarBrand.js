@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 const NavbarBrand = ({ logo }) => {
 	return (
 		<Link to="/" className="navbar-brand">
-			<img src={logo} alt="logo weblymit zacharie kabasele" width="320" />
+			<img src={logo} alt="logo weblymit zacharie kabasele" width="220" />
 		</Link>
 	);
 };

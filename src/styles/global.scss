@@ -9,20 +9,28 @@ body {
     font-size: 16px;
   }
 
-  h1 {
+  .h1-size {
     font-size: 30px;
     font-family: $barlow, sans-serif;
+    font-weight: 500;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 300;
     font-family: $barlow, sans-serif;
     color: $vert;
   }
 
   h3 {
+    font-size: 1.1rem;
     font-family: $libre, serif;
     text-transform: uppercase;
     ;
+  }
+
+  .logo_container {
+    height: 40px;
+    width: 40px;
   }
 }

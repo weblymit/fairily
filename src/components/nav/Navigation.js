@@ -50,10 +50,10 @@ class Navigation extends Component {
 						</Navbar.Toggle>
 						<Navbar.Collapse id="basic-navbar-nav">
 							<Nav className="ml-auto" id="myNavigation">
-								<NavLink navLink="Notre concept" linkHref="#" />
-								<NavLink navLink="Notre expérience" linkHref="#" />
-								<NavLink navLink="Notre communauté " linkHref="#" />
-								<NavLink navLink="Votre parcours" linkHref="#" />
+								<NavLink navLink="Notre concept" linkHref="#section_concept" />
+								<NavLink navLink="Notre expérience" linkHref="#section_concept" />
+								<NavLink navLink="Notre communauté " linkHref="#section_concept" />
+								<NavLink navLink="Votre parcours" linkHref="#section_concept" />
 							</Nav>
 						</Navbar.Collapse>
 					</Container>
