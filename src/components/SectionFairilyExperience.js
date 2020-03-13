@@ -1,32 +1,47 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const SectionFairilyExperience = () => {
 	return (
-		<section id="fairily_experience">
+		<Section id="fairily_experience">
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">
-						<h2>L'expérience</h2>
+						<div className="box-experience">
+							<h2>L'expérience</h2>
+							<p className="h1-size">
+								Etre un <br /> Fairy'Shopper{' '}
+							</p>
+						</div>
+					</div>
+					<div className="col-md-6" id="box-shopper">
+						<h3>
+							être un fairy'Shopper, <br /> c'est être au coeur de <br /> sa propre expérience <br />{' '}
+							d'achat
+						</h3>
 						<p>
-							Etre un <br /> Fairy'Shopper{' '}
+							Décider d’oser, de découvrir, d’aimer, <br /> de négocier, de posséder dans <br /> l’univers
+							exaltant de Fairily.
 						</p>
 					</div>
-					<div className="col-md-6">
-						<h3>être un fairy'Shopper, c'est être au coeur de sa propre expérience d'achat</h3>
-						<p>
-							Etre un <br /> Fairy'Shopper{' '}
-						</p>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-md-6">img</div>
-					<div className="col-md-6">img</div>
-					<div className="col-md-6">img</div>
-					<div className="col-md-6">img</div>
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 
 export default SectionFairilyExperience;
+
+const Section = styled.section`
+	background-color: #fff;
+	padding: 80px 0 290px;
+	margin-right: 90px;
+
+	.box-experience {
+		margin-left: 110px;
+	}
+
+	#box-shopper {
+		padding-left: 100px;
+	}
+`;

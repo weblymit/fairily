@@ -1,17 +1,36 @@
-import React from 'react';
+import React from 'react'; 
 import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const SectionFairilyParcours = () => {
+	const data = useStaticQuery(graphql`
+		query {
+			img: file(relativePath: { eq: "img9.jpg" }) {
+				childImageSharp {
+					fluid(maxHeight: 620, quality: 90) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+		}
+	`);
+	const img1 = data.img.childImageSharp.fluid;
+
 	return (
 		<Section id="fairily_parcour">
-			<div className="container">
+			<div className="container-fluid">
 				<div className="row">
 					<div className="col-md-4">
-						<p>hello</p>
+						<div className="cont-img">
+							<Img fluid={img1} />
+						</div>
 					</div>
-					<div className="col-md-8">
-						<p>Découverte des séries limitées de la semaine</p>
-						<h2>Notre parcours</h2>
+					<div className="col-md-8" id="parcour_block">
+						<p className="parcour_block_firstP">
+							Découverte des séries <br /> limitées de la semaine
+						</p>
+						<p className="h1-size">Notre parcours</p>
 
 						<div>
 							<span className="badge badge-pill badge-primary">1</span>
@@ -45,4 +64,47 @@ const SectionFairilyParcours = () => {
 
 export default SectionFairilyParcours;
 
-const Section = styled.section`width: 100%;`;
+const Section = styled.section`
+	padding: 80px 0;
+	p {
+		color: #fff;
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	.cont-img {
+		position: relative;
+		top: 190px;
+		z-index: 1;
+		width: 540px;
+		margin-left: 70px;
+		/* margin-right: 160px; */
+		/* height: auto; */
+	}
+
+	#parcour_block {
+		background-color: #bb6b44;
+		color: #fff;
+		padding: 120px 130px 120px 270px;
+
+		.h1-size {
+			color: #fff;
+			margin-bottom: 3rem;
+		}
+
+		.parcour_block_firstP  {
+			color: #fff;
+			font-size: 1.8rem;
+		}
+
+		.badge-primary {
+			color: #bb6b44;
+			background-color: #fff;
+			margin-bottom: 20px;
+			margin-top: 30px;
+			font-size: 1.1rem;
+		}
+	}
+`;

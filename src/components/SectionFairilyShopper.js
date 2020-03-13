@@ -6,7 +6,7 @@ const SectionFairilyShopper = () => {
 		<Section id="fairy_shoppers">
 			<div className="container">
 				<div className="row">
-					<div className="col-md-6" >
+					<div className="col-md-6">
 						<div id="block_community">
 							<h2>
 								Nos fairy’shoppers <br /> Nos fairy’makers
@@ -25,8 +25,8 @@ const SectionFairilyShopper = () => {
 						</div>
 					</div>
 
-					<div className="col-md-6">
-						<h3>
+					<div className="col-md-6" id="block_community_two">
+						<h3 className="myH3">
 							Fairily est l'application <br /> de négociation <br /> des produits d'exception
 						</h3>
 						<p>
@@ -35,15 +35,17 @@ const SectionFairilyShopper = () => {
 							Fairily est un véritable créateur de liens entre acheteurs en recherche de plaisir,
 							découverte et artisans créateurs.
 						</p>
-						<div className="fairily_button">
-							<a href="#" className="btn btn-success">
-								s'inscrire
-							</a>
-						</div>
-						<div className="fairily_button">
-							<a href="#" className="btn btn-primary">
-								devenir un Fairy'Maker
-							</a>
+						<div id="button_div">
+							<div className="fairily_button">
+								<a href="#" className="btn btn-green">
+									s'inscrire
+								</a>
+							</div>
+							<div className="fairily_button">
+								<a href="#" className="btn btn-gray">
+									devenir un Fairy'Maker
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -55,11 +57,36 @@ const SectionFairilyShopper = () => {
 export default SectionFairilyShopper;
 
 const Section = styled.section`
-	padding: 80px 0;
+	padding: 70px 0;
 	#block_community {
 		background-color: #fff;
-		padding: 50px;
+		padding: 75px 75px 100px;
 		/* margin-right: 10%; */
-		margin-top: -200px;
+		margin-top: -170px;
+
+		& .h1-size {
+			margin-top: 30px;
+			margin-bottom: 70px;
+		}
+
+		& .list_shopper {
+			ul {
+				list-style: none;
+				padding: 0;
+				font-weight: 500;
+				line-height: 2;
+			}
+		}
+	}
+	#block_community_two {
+		padding-left: 60px;
+		padding-right: 180px;
+
+		#button_div {
+			margin-top: 30px;
+			.fairily_button {
+				margin-bottom: 15px;
+			}
+		}
 	}
 `;

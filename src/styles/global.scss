@@ -5,32 +5,65 @@ body {
 
   p {
     color: $gray;
-    font-family: $barlow, sans-serif;
+    font-family: $barlow;
     font-size: 16px;
   }
 
   .h1-size {
-    font-size: 30px;
-    font-family: $barlow, sans-serif;
-    font-weight: 500;
+    font-size: 50px;
+    font-family: $barlow;
+    font-weight: 400;
+    line-height: 1;
   }
 
   h2 {
     font-size: 2rem;
     font-weight: 300;
-    font-family: $barlow, sans-serif;
+    font-family: $barlow;
     color: $vert;
   }
 
   h3 {
     font-size: 1.1rem;
-    font-family: $libre, serif;
+    font-family: $libre;
     text-transform: uppercase;
-    ;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-weight: 500;
+
   }
 
   .logo_container {
     height: 40px;
     width: 40px;
   }
+
+  .btn-green {
+    background-color: $vert;
+    color: #fff;
+    font-family: $archivo;
+    font-weight: 900;
+    border-radius: 30px;
+    padding: 10px 80px;
+
+    &:hover {
+      color: #fff;
+      background-color: #73b992;
+    }
+  }
+
+  .btn-gray {
+    background-color: $gray_black;
+    color: #fff;
+    font-family: $archivo;
+    font-weight: 900;
+    border-radius: 30px;
+    padding: 10px 30px;
+
+    &:hover {
+      color: #fff;
+      background-color: #3d6a75;
+    }
+  }
+
 }

@@ -28,10 +28,10 @@ const SectionThreeHome = ({className}) => {
 };
 
 const StyledBackgroundSection = styled(SectionThreeHome)`
-	height: 280px;
+	height: 300px;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   
 `;
 

@@ -94,7 +94,7 @@ const Div = styled.div`
 		/* height: 200px; */
 
 		.div_logo_header {
-			margin-top: -140px;
+			margin-top: -160px;
 
 			& #logo_1 {
 				margin-right: 24px;

@@ -15,6 +15,7 @@ import Image from '../components/image';
 import ImgLogoGris from '../images/symbole_seul_gris.png';
 import SEO from '../components/seo';
 import styled from 'styled-components';
+import SectionFairilyFourImage from '../components/SectionFairilyFourImage';
 
 class IndexPage extends React.Component {
 	render() {
@@ -30,6 +31,7 @@ class IndexPage extends React.Component {
 					<SectionFairilyShopper />
 					<SectionFairilyParcours />
 					<SectionFairilyExperience />
+					<SectionFairilyFourImage />
 					<SectionFairilyAvantage />
 					<SectionFourHome />
 					<NewsLetter />

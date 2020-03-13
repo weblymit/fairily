@@ -1,32 +1,70 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const SectionFairilyAvantage = () => {
 	return (
-		<section>
-			<div className="container">
-				<div className="row">
-					<div className="col-md-3">
-					<p>Les avantages</p>
-					<h2>
-						Etre un <br /> Fairy'Maker
-					</h2>
+		<Section>
+			<div className="box-principal">
+				<div className="container">
+					<div className="row">
+						<div className="col-md-4">
+							<div className="header-box">
+								<h2>Les avantages</h2>
+								<p className="h1-size">
+									Etre un <br /> Fairy'Maker
+								</p>
+							</div>
+						</div>
+						<div className="col-md-8">
+							<div className="box-body">
+								<h3>
+									C'est être au coeur de sa propre <br /> expérience de vente
+								</h3>
+								<p>
+									Grâce à un nouveau parcours d’achat, vos futurs clients découvrent vos séries
+									limitées et négocient directement avec vous pour obtenir des produits de votre
+									création.
+								</p>
+								<h3>Les avanatges en tant que Fairy'Maker ?</h3>
+								<p>
+									Grâce à un nouveau parcours d’achat, vos futurs clients découvrent vos séries
+									limitées et négocient directement avec vous pour obtenir des produits de votre
+									création.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div className="col-md-9">
-					<h3>C'est être au coeur de sa propre expérience de vente</h3>
-					<p>
-						Grâce à un nouveau parcours d’achat, vos futurs clients découvrent vos séries limitées et
-						négocient directement avec vous pour obtenir des produits de votre création.
-					</p>
-					<h3>Les avanatges en tant que Fairy'Maker ?</h3>
-					<p>
-						Grâce à un nouveau parcours d’achat, vos futurs clients découvrent vos séries limitées et
-						négocient directement avec vous pour obtenir des produits de votre création.
-					</p>
-				</div>
-      </div>
-      </div>
-		</section>
+			</div>
+		</Section>
 	);
 };
 
 export default SectionFairilyAvantage;
+
+const Section = styled.section`
+		margin-top: -310px;
+
+	.box-principal {
+		background-color: #8c90a7;
+		color: #fff;
+		padding-top: 190px;
+		padding-bottom: 150px;
+		margin-left: 90px;
+		/* position: relative; */
+		/* top: -340px; */
+		/* z-index: -1; */
+	}
+
+	p {
+		color: #fff;
+	}
+
+	.header-box {
+		margin-left: 120px;
+	}
+	.box-body {
+		margin-left: 160px;
+		margin-right: 180px;
+	}
+`;
