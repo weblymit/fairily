@@ -38,6 +38,4 @@ const StyledBackgroundSection = styled(SectionThreeHome)`
 
 export default StyledBackgroundSection;
 
-const Div = styled.div`
-	
-`;
+;

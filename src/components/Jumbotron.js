@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container } from 'react-bootstrap';
+// import { Jumbotron, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import BackgroundImage from 'gatsby-background-image';

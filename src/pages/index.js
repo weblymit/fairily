@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SectionThreeHome from '../components/sectionThreeHome';
@@ -11,8 +11,8 @@ import SectionFairilyAvantage from '../components/SectionFairilyAvantage';
 import SectionFourHome from '../components/SectionFourHome';
 import NewsLetter from '../components/NewsLetter';
 import SectionApp from '../components/SectionApp';
-import Image from '../components/image';
-import ImgLogoGris from '../images/symbole_seul_gris.png';
+// import Image from '../components/image';
+// import ImgLogoGris from '../images/symbole_seul_gris.png';
 import SEO from '../components/seo';
 import styled from 'styled-components';
 import SectionFairilyFourImage from '../components/SectionFairilyFourImage';
