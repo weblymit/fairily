@@ -1,9 +1,9 @@
 import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-const SectionThreeHome = ({className}) => {
+const SectionThreeHome = ({ className }) => {
 	const data = useStaticQuery(graphql`
 		query {
 			imageCoq: file(relativePath: { eq: "fairily_coquillage.jpg" }) {
@@ -14,17 +14,13 @@ const SectionThreeHome = ({className}) => {
 				}
 			}
 		}
-  `);
-  const img = data.imageCoq.childImageSharp.fluid
-  return (
-    <div>
-      <BackgroundImage Tag="div" className={className} fluid={img} backgroundColor={`#aec9ba`}>
-
-
-      </BackgroundImage>
-    </div>
-
-  );
+	`);
+	const img = data.imageCoq.childImageSharp.fluid;
+	return (
+		<div>
+			<BackgroundImage Tag="div" className={className} fluid={img} backgroundColor={`#aec9ba`} />
+		</div>
+	);
 };
 
 const StyledBackgroundSection = styled(SectionThreeHome)`
@@ -35,7 +31,4 @@ const StyledBackgroundSection = styled(SectionThreeHome)`
   
 `;
 
-
 export default StyledBackgroundSection;
-
-;

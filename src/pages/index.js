@@ -8,7 +8,8 @@ import SectionFairilyConcept from '../components/SectionFairilyConcept';
 import SectionFairilyParcours from '../components/SectionFairilyParcours';
 import SectionFairilyExperience from '../components/SectionFairilyExperience';
 import SectionFairilyAvantage from '../components/SectionFairilyAvantage';
-import SectionFourHome from '../components/SectionFourHome';
+import SectionFour from '../components/sectionFourHome';
+// import SectionFourHome from '../components/sectionFourHome';
 import NewsLetter from '../components/NewsLetter';
 import SectionApp from '../components/SectionApp';
 // import Image from '../components/image';
@@ -25,15 +26,15 @@ class IndexPage extends React.Component {
 
 				<Div className="">
 					<SectionFairilyConcept />
-					<section id="fairily_section_three">
+					{/* <section id="fairily_section_three"> */}
 						<SectionThreeHome />
-					</section>
+					{/* </section> */}
 					<SectionFairilyShopper />
 					<SectionFairilyParcours />
 					<SectionFairilyExperience />
 					<SectionFairilyFourImage />
 					<SectionFairilyAvantage />
-					<SectionFourHome />
+					<SectionFour />
 					<NewsLetter />
 					<SectionApp />
 				</Div>
