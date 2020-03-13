@@ -18,8 +18,15 @@ const Footer = () => {
 						<img src={img2} alt="" className="img-fluid" width="250" />
 					</div>
 					<div className="col-md-6">
-						<FontAwesomeIcon icon={faFacebook} />
-						<FontAwesomeIcon icon={faInstagram} />
+						<a href="https://www.facebook.com/Fairilyapp/" target="_blank" rel="noopener noreferrer">
+							<FontAwesomeIcon icon={faFacebook} />
+						</a>
+						<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+							<FontAwesomeIcon icon={faInstagram} />
+						</a>
+						<a href="https://www.linkedin.com/company/fairily" target="_blank" rel="noopener noreferrer">
+							<FontAwesomeIcon icon={faLinkedin} />
+						</a>
 					</div>
 				</div>
 				<div className="row align-items-center">
@@ -61,8 +68,8 @@ const FooterDiv = styled.footer`
 	}
 
 	.svg-inline--fa {
-		width: 4rem;
-		font-size: 2rem;
+		width: 3.2rem;
+		font-size: 1.6rem;
 	}
 
 	hr {
@@ -73,5 +80,9 @@ const FooterDiv = styled.footer`
 	.copyright {
 		font-family: 'Archivo', sans-serif;
 		font-size: 8px;
+	}
+
+	a {
+		color: #fff;
 	}
 `;
