@@ -3,7 +3,7 @@ import BackgroundImage from 'gatsby-background-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components'
 
-const SectionThreeHome = ({className}) => {
+const SectionFourHome = ({className}) => {
 	const data = useStaticQuery(graphql`
 		query {
 			imageCoq: file(relativePath: { eq: "fairily_green.jpg" }) {
@@ -27,7 +27,7 @@ const SectionThreeHome = ({className}) => {
   );
 };
 
-const StyledBackgroundSection = styled(SectionThreeHome)`
+const StyledBackgroundSection = styled(SectionFourHome)`
 	height: 250px;
   background-position: center;
   background-size: cover;
@@ -37,7 +37,4 @@ const StyledBackgroundSection = styled(SectionThreeHome)`
 
 
 export default StyledBackgroundSection;
-
-const Div = styled.div`
-	
-`;
+;
