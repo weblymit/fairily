@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import star from '../images/etoile.svg'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const SectionFairilyShopper = () => {
 	return (
@@ -19,10 +19,22 @@ const SectionFairilyShopper = () => {
 							</p>
 							<div className="list_shopper">
 								<ul>
-									<li>Dénichez des séries limitées</li>
-									<li>Négociez le prix d’achat</li>
-									<li>Osez prendre des risques</li>
-									<li>Devenez un Fairy’Shopper</li>
+									<li>
+										<FontAwesomeIcon icon={faStar} />
+										Dénichez des séries limitées
+									</li>
+									<li>
+										<FontAwesomeIcon icon={faStar} />
+										Négociez le prix d’achat
+									</li>
+									<li>
+										<FontAwesomeIcon icon={faStar} />
+										Osez prendre des risques
+									</li>
+									<li>
+										<FontAwesomeIcon icon={faStar} />
+										Devenez un Fairy’Shopper
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -78,6 +90,12 @@ const Section = styled.section`
 				padding: 0;
 				font-weight: 500;
 				line-height: 2;
+			}
+
+			.svg-inline--fa.fa-w-18 {
+				width: .6em;
+				color: #777777;
+				margin-right: 5px;
 			}
 		}
 	}
