@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const SectionFairilyExperience = () => {
 	return (
 		<Section id="fairily_experience">
+			<div className="hl2" />
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">

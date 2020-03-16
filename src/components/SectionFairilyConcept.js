@@ -28,13 +28,13 @@ const SectionFairilyConcept = () => {
 	return (
 		<Div>
 			<section className="container" id="section_concept">
-				<div className="vl" />
 				<div className="row">
 					<div className="col-md-6 div_logo_header">
 						<div className="container">
 							<div className="row">
 								<div className="col-md-1" id="logo_1">
 									<div className="logo_container">
+										<div className="vl" />
 										<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
 									</div>
 								</div>

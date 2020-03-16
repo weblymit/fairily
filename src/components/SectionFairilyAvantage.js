@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const SectionFairilyAvantage = () => {
 	return (
 		<Section>
+			<div className="hl3" />
 			<div className="box-principal">
 				<div className="container">
 					<div className="row">

@@ -57,9 +57,9 @@ const SectionFairilyShopper = () => {
 								</Link>
 							</div>
 							<div className="fairily_button">
-								<Link to="/#fairily_newsletter" className="btn btn-gray">
+								<a href="mailto:partenariat@fairilyapp.com" className="btn btn-gray">
 									devenir un Fairy'Maker
-								</Link>
+								</a>
 							</div>
 						</div>
 					</div>

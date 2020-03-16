@@ -5,18 +5,36 @@ html {
 
   .vl {
     border-left: 1px solid $lavande;
-    height: 50px;
-    position: absolute;
-    left: 98px;
-    top: 640px;
+    height: 55px;
+    position: relative;
+    left: 19px;
+    bottom: 10px;
   }
 
   .hl {
-    border-left: 200px solid #73b992;
+    border-left: 200px solid #aec9ba;
     height: 1px;
-    position: absolute;
-    left: -150px;
-    top: 70px;
+    position: relative;
+    left: -220px;
+    bottom: -22px;
+    z-index: 1;
+  }
+
+  .hl2 {
+    border-left: 80px solid #aec9ba;
+    height: 1px;
+    position: relative;
+    left: 0px;
+    bottom: -22px;
+  }
+
+  .hl3 {
+    border-left: 227px solid #fff;
+    height: 1px;
+    position: relative;
+    left: 0px;
+    bottom: -212px;
+    // z-index: 1;
   }
 }
 
