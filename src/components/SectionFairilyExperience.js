@@ -38,7 +38,7 @@ const Section = styled.section`
 	margin-right: 90px;
 
 	.box-experience {
-		margin-left: 110px;
+		margin-left: 50px;
 	}
 
 	#box-shopper {

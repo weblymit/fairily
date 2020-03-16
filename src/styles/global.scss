@@ -1,5 +1,25 @@
 @import "./variable.scss";
 
+html {
+  scroll-behavior: smooth;
+
+  .vl {
+    border-left: 1px solid $lavande;
+    height: 50px;
+    position: absolute;
+    left: 98px;
+    top: 640px;
+  }
+
+  .hl {
+    border-left: 200px solid #73b992;
+    height: 1px;
+    position: absolute;
+    left: -150px;
+    top: 70px;
+  }
+}
+
 body {
   background-color: $gray_bcg;
 
@@ -66,4 +86,13 @@ body {
     }
   }
 
+
+  // .vl {
+  //   border-left: 6px solid green;
+  //   height: 500px;
+  //   position: absolute;
+  //   left: 50%;
+  //   margin-left: -3px;
+  //   top: 0;
+  // }
 }

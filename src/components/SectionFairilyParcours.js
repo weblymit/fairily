@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 const SectionFairilyParcours = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			img: file(relativePath: { eq: "img9.jpg" }) {
+			img: file(relativePath: { eq: "parcours.jpeg" }) {
 				childImageSharp {
 					fluid(maxHeight: 620, quality: 90) {
 						...GatsbyImageSharpFluid
@@ -41,8 +41,7 @@ const SectionFairilyParcours = () => {
 							<span className="badge badge-pill badge-primary">2</span>
 							<h3>Un coup de coeur</h3>
 							<p>
-								Faites une offre et laissez-vous prendre au jeu de la négociation ! Visualisez le nombre
-								de Fairy’Shoppers intéressés et négociez à vos risques et périls...
+								Faites une offre de prix à l’aveugle et laissez-vous prendre au jeu de la négociation ! Visualisez le nombre de Fairy’Shoppers intéressés et négociez à vos risques et périls ...
 							</p>
 						</div>
 						<div>
@@ -105,6 +104,11 @@ const Section = styled.section`
 			margin-bottom: 20px;
 			margin-top: 30px;
 			font-size: 1.1rem;
+		}
+
+		.badge-pill {
+			padding: 10px 15px;
+			border-radius: 50%;
 		}
 	}
 `;

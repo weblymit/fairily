@@ -6,9 +6,9 @@ import styled from 'styled-components';
 const SectionFairilyConcept = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			img: file(relativePath: { eq: "tournevis.jpg" }) {
+			img: file(relativePath: { eq: "img9.jpg" }) {
 				childImageSharp {
-					fluid(maxHeight: 720, quality: 90) {
+					fluid(maxHeight: 520, quality: 90) {
 						...GatsbyImageSharpFluid
 					}
 				}
@@ -28,21 +28,26 @@ const SectionFairilyConcept = () => {
 	return (
 		<Div>
 			<section className="container" id="section_concept">
+				<div className="vl" />
 				<div className="row">
 					<div className="col-md-6 div_logo_header">
-						<div className="row">
-							<div className="col-md-1" id="logo_1">
-								<div className="logo_container">
-									<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
+						<div className="container">
+							<div className="row">
+								<div className="col-md-1" id="logo_1">
+									<div className="logo_container">
+										<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
+									</div>
 								</div>
-							</div>
-							<div className="col-md-8">
-								<h2>Fairily</h2>
-								<p className="h1-size">Notre concept</p>
+								<div className="col-md-8">
+									<h2>Fairily</h2>
+									<p className="h1-size">Notre concept</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div className="col-md-6" id="votre_experience">
+						<div className="hl" />
+
 						<h2>
 							De nouvelles expériences <br /> à vivre
 						</h2>
@@ -51,28 +56,30 @@ const SectionFairilyConcept = () => {
 				</div>
 			</section>
 			<section id="fairily_concept">
-				<div className="">
-					<div className="row" id="fairily_purpose">
-						<div className="col-md-6 col-img">
-							<div className="cont">
-								<Img
-									fluid={img1}
-									alt="fairily parcour"
-									id="img_parcour"
-									imgStyle={{ objectFit: 'contain' }}
-								/>
-							</div>
+				<div className="row" id="fairily_purpose">
+					<div className="col-md-6 col-img">
+						<div className="cont">
+							<Img
+								fluid={img1}
+								alt="fairily parcour"
+								id="img_parcour"
+								// imgStyle={{ objectFit: 'contain' }}
+								className="img-fluid"
+							/>
 						</div>
-						<div className="col-md-6" id="fairily_purpose_contenu">
-							<div className="logo_container">
-								<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
-							</div>
-							<h3>FAIRILY VOUS PROPOSE DE <br/> DEVENIR ACTEUR DE VOTRE <br/> SHOPPING EN LIGNE</h3>
-							<p>
-								Chez nous, vous êtes au cœur de l’expérience. <br/> Vous avez le pouvoir de décision sur le
-								produit et le prix.
-							</p>
+					</div>
+					<div className="col-md-6" id="fairily_purpose_contenu">
+						<div className="logo_container">
+							<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
 						</div>
+						<h3>
+							FAIRILY VOUS PROPOSE DE <br /> DEVENIR ACTEUR DE VOTRE <br /> SHOPPING EN LIGNE
+						</h3>
+						<p>
+							Chez nous, vous êtes au cœur de l’expérience. <br /> Vous avez le pouvoir de décision sur le
+							produit et le prix. <br />
+							Découvrez une sélection décoration, objets design, <br /> bijoux et accessoires.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -81,23 +88,25 @@ const SectionFairilyConcept = () => {
 };
 
 export default SectionFairilyConcept;
-
 const Div = styled.div`
+	/* padding: 80px 0; */
 	width: 100%;
-	padding-right: 15px;
+	padding-right: 85px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
 
 	#section_concept {
+		padding-top: 80px;
 		margin-top: 50px;
 		/* height: 200px; */
 
 		.div_logo_header {
-			margin-top: -160px;
+			margin-top: -220px;
 
 			& #logo_1 {
 				margin-right: 24px;
+				margin-left: 15px;
 			}
 		}
 
@@ -108,15 +117,19 @@ const Div = styled.div`
 	}
 
 	#fairily_concept {
+		height: 500px;
 		.cont {
-			max-height: 680px;
-			/* margin-right: 85px; */
-			/* margin-top: -200px; */
-			/* top:-100px; */
+			/* max-height: 280px; */
+			/* height: 700px; */
+			position: relative;
+			top: -180px;
 		}
+
 		.col-img {
 			padding-left: 0;
-			margin-top: -300px;
+			height: 620px;
+			overflow: hidden;
+			top: -300px;
 		}
 
 		.logo_container {
@@ -126,9 +139,12 @@ const Div = styled.div`
 		#fairily_purpose {
 			background-color: #fff;
 			padding-top: 50px;
+			/* margin-bottom: 50px; */
 
 			& #fairily_purpose_contenu {
 				padding-left: 60px;
+				/* height: 300px; */
+				/* margin-left:90px; */
 			}
 		}
 	}

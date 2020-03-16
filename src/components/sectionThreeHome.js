@@ -17,7 +17,7 @@ const SectionThreeHome = ({ className }) => {
 	`);
 	const img = data.imageCoq.childImageSharp.fluid;
 	return (
-		<div>
+		<div id="fairy_shoppers">
 			<BackgroundImage Tag="div" className={className} fluid={img} backgroundColor={`#aec9ba`} />
 		</div>
 	);
@@ -32,3 +32,8 @@ const StyledBackgroundSection = styled(SectionThreeHome)`
 `;
 
 export default StyledBackgroundSection;
+
+// const Div = styled.div`
+// 	margin-top: 50px;
+
+// `

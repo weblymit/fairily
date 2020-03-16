@@ -41,7 +41,7 @@ class Navigation extends Component {
 	render() {
 		return (
 			<DivNav>
-				<Navbar expand="lg" fixed="sticky" bg="light">
+				<Navbar expand="lg" fixed="top" bg="light">
 					<Container>
 						<NavbarBrand logo={logo} />
 						<Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -50,10 +50,10 @@ class Navigation extends Component {
 						</Navbar.Toggle>
 						<Navbar.Collapse id="basic-navbar-nav">
 							<Nav className="ml-auto" id="myNavigation">
-								<NavLink navLink="Notre concept" linkHref="#section_concept" />
-								<NavLink navLink="Notre expérience" linkHref="#section_concept" />
-								<NavLink navLink="Notre communauté " linkHref="#section_concept" />
-								<NavLink navLink="Votre parcours" linkHref="#section_concept" />
+								<NavLink navLink="Notre concept" linkHref="/" />
+								<NavLink navLink="Votre expérience" linkHref="/#notre-concept" />
+								<NavLink navLink="Notre communauté " linkHref="/#fairy_shoppers" />
+								<NavLink navLink="Votre parcours" linkHref="/#fairily_parcour" />
 							</Nav>
 						</Navbar.Collapse>
 					</Container>
@@ -71,12 +71,15 @@ const DivNav = styled.div`
 	}
 	.navbar-nav {
 		text-align: center;
+		padding: 30px 0;
 		/* background-color: #000; */
 	}
 
 	.navbar-expand-lg .navbar-nav .nav-link {
 		padding: 0 30px;
 		border-right: 1px solid;
+		font-size: 1.2rem;
+		color: #000 !important;
 
 		&:last-child {
 			border-right: 0;

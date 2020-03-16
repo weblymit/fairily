@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
 				<Div className="">
 					<SectionFairilyConcept />
 					{/* <section id="fairily_section_three"> */}
-						<SectionThreeHome />
+					<SectionThreeHome />
 					{/* </section> */}
 					<SectionFairilyShopper />
 					<SectionFairilyParcours />
@@ -45,6 +45,4 @@ class IndexPage extends React.Component {
 
 export default IndexPage;
 
-const Div = styled.div`
-/* padding: 0; */
-`
+const Div = styled.div`/* padding: 0; */`;

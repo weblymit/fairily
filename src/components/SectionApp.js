@@ -34,7 +34,7 @@ const SectionApp = () => {
 	const appstore = data.appstore.childImageSharp.fluid;
 	return (
 		<Section id="app">
-			<div className="container-fluid">
+			<div className="container-fluid" >
 				<div className="row">
 					<div className="col-md-6" id="img_left">
 						<div className="box-img">
@@ -46,7 +46,7 @@ const SectionApp = () => {
 							<p className="h1-size">
 								Découvrez notre <br /> application <br /> mobile
 							</p>
-							<p>Pensée pour vous, avec vous et par vous !</p>
+							<p>Les ventes éphémères repensées pour vous, <br/> avec vous et par vous !</p>
 							<div className="app_store">
 								<Img fluid={appstore} />
 							</div>
@@ -65,17 +65,27 @@ export default SectionApp;
 
 const Section = styled.section`
 	padding: 0;
+	height: 611px;
+	/* overflow: hidden; */
+
+	.box-img {
+		height: 500px;
+		/* top: -100px;
+		position: relative; */
+
+	}
 
 	#img_left {
 		padding-left: 0;
 		position: relative;
-		top: -50px;
-		height: 632px;
+		top: -70px;
+		/* overflow: hidden; */
 	}
 
 	.box-right {
 		padding-left: 50px;
 		padding-top: 110px;
+		/* height: 400px; */
 
 		.app_store {
 			width: 220px;

@@ -7,7 +7,7 @@ const NewsLetter = () => {
 			<div className="container">
 				<p className="h1-size">Recevez la newsletter Fairily</p>
 				<p>
-					Rejoignez la communauté et suivez les deals en cours, les Fairy’Makers de la semaine et ceux à venir
+					Rejoignez la communauté et suivez les offres en cours, les Fairy’Makers de la semaine et ceux à venir
 					!
 				</p>
 				<div className="box-form">
@@ -27,7 +27,7 @@ export default NewsLetter;
 const Section = styled.section`
 	background-color: #fff;
 	padding-top: 130px;
-	padding-bottom: 130px;
+	padding-bottom: 190px;
 	padding-left: 240px;
 	margin-left: 95px;
 

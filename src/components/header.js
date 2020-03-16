@@ -5,8 +5,7 @@ import Jumbotron from '../components/Jumbotron';
 const Header = () => {
 	return (
 		<div>
-			<Navigation />
-			
+			{/* <Navigation /> */}
 			<Jumbotron />
 		</div>
 	);

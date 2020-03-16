@@ -27,9 +27,10 @@ const SectionFairilyAvantage = () => {
 								</p>
 								<h3>Les avanatges en tant que Fairy'Maker ?</h3>
 								<p>
-									Grâce à un nouveau parcours d’achat, vos futurs clients découvrent vos séries
-									limitées et négocient directement avec vous pour obtenir des produits de votre
-									création.
+									Digitaliser votre métier, être visible sur une Marketplace pointue et différenciante
+									qui valorise votre savoir-faire et votre univers créatif, connaître vos futurs
+									clients, leurs attentes, l’attractivité de vos produits, établir un prix juste pour
+									vous et pour les acheteurs, sécuriser le paiement.
 								</p>
 							</div>
 						</div>
@@ -43,7 +44,7 @@ const SectionFairilyAvantage = () => {
 export default SectionFairilyAvantage;
 
 const Section = styled.section`
-		margin-top: -310px;
+	margin-top: -310px;
 
 	.box-principal {
 		background-color: #8c90a7;

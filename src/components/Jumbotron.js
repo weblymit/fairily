@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Jumbotron, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import Navigation from '../components/nav/Navigation'
 
 import BackgroundImage from 'gatsby-background-image';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -21,6 +22,7 @@ const JumbotronHome = ({ className }) => {
 	const jumbo = data.jumbo.childImageSharp.fluid;
 	return (
 		<Div>
+			<Navigation />
 			<BackgroundImage Tag="div" className={className} fluid={jumbo} backgroundColor={`#aec9ba`}>
 				{/* <Jumbotron fluid>
 					<Container>
@@ -29,12 +31,13 @@ const JumbotronHome = ({ className }) => {
 					</Container>
 				</Jumbotron> */}
 			</BackgroundImage>
+			<div id="notre-concept" />
 		</Div>
 	);
 };
 
 const StyledBackgroundSection = styled(JumbotronHome)`
-	height: 100vh;
+	height: 110vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

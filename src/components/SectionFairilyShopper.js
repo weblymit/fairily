@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+import star from '../images/etoile.svg'
+
 
 const SectionFairilyShopper = () => {
 	return (
-		<Section id="fairy_shoppers">
+		<Section>
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">
@@ -16,10 +19,10 @@ const SectionFairilyShopper = () => {
 							</p>
 							<div className="list_shopper">
 								<ul>
-									<li>Dénichez des produits d’exception</li>
+									<li>Dénichez des séries limitées</li>
 									<li>Négociez le prix d’achat</li>
 									<li>Osez prendre des risques</li>
-									<li>Devenez un FAIRY’SHOPPER</li>
+									<li>Devenez un Fairy’Shopper</li>
 								</ul>
 							</div>
 						</div>
@@ -27,24 +30,24 @@ const SectionFairilyShopper = () => {
 
 					<div className="col-md-6" id="block_community_two">
 						<h3 className="myH3">
-							Fairily est l'application <br /> de négociation <br /> des produits d'exception
+							Fairily est le dénicheur <br /> des séries limitées <br /> au juste prix
 						</h3>
 						<p>
 							Dénichez d’authentiques produits sélectionnés avec soin, négociez le prix d’achat à travers
 							une expérience intuitive, personnalisée et ludique. Devenez l’acteur de vos découvertes.
-							Fairily est un véritable créateur de liens entre acheteurs en recherche de plaisir,
-							découverte et artisans créateurs.
+							Fairily est un véritable créateur de liens et des émotions entre acheteurs en recherche de
+							plaisir, découverte et artisans créateurs.
 						</p>
 						<div id="button_div">
 							<div className="fairily_button">
-								<a href="#" className="btn btn-green">
+								<Link to="/#fairily_newsletter" className="btn btn-green">
 									s'inscrire
-								</a>
+								</Link>
 							</div>
 							<div className="fairily_button">
-								<a href="#" className="btn btn-gray">
+								<Link to="/#fairily_newsletter" className="btn btn-gray">
 									devenir un Fairy'Maker
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>

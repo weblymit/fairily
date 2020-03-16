@@ -24,15 +24,12 @@ const Footer = () => {
 						<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
 							<FontAwesomeIcon icon={faInstagram} />
 						</a>
-						<a href="https://www.linkedin.com/company/fairily" target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faLinkedin} />
-						</a>
 					</div>
 				</div>
 				<div className="row align-items-center">
 					<div className="col-md-12">
 						<ul className="list-inline social-buttons mx-auto">
-							<li className="list-inline-item">Contactez-nous</li>
+							<li className="list-inline-item"><a href="mailto:contact@fairilyapp.com">Contactez-nous</a></li>
 							<li className="list-inline-item">FAQ</li>
 							<li className="list-inline-item">Mentions légales</li>
 							<li className="list-inline-item">Livraisons et retours</li>
@@ -44,7 +41,7 @@ const Footer = () => {
 			</div>
 			<hr style={{ backgroundColor: '#fff' }} />
 			<div className="text-center">
-				<span className="copyright ">{new Date().getFullYear()} Fairily. Conçu avec . et plein de .</span>
+				<span className="copyright ">{new Date().getFullYear()} Fairily. Conçu avec ♥️ et plein de ♥️</span>
 			</div>
 		</FooterDiv>
 	);
@@ -79,7 +76,7 @@ const FooterDiv = styled.footer`
 
 	.copyright {
 		font-family: 'Archivo', sans-serif;
-		font-size: 8px;
+		font-size: 15px;
 	}
 
 	a {
