@@ -41,7 +41,7 @@ const Footer = () => {
 			</div>
 			<hr style={{ backgroundColor: '#fff' }} />
 			<div className="text-center">
-				<span className="copyright ">{new Date().getFullYear()} Fairily. Conçu avec ♥️ et plein de ♥️</span>
+				<span className="copyright ">{new Date().getFullYear()} Fairily. Conçu avec . et plein de .</span>
 			</div>
 		</FooterDiv>
 	);
