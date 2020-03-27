@@ -47,12 +47,28 @@ export default SectionFairilyAvantage;
 const Section = styled.section`
 	margin-top: -310px;
 
+	.hl3 {
+		@media (max-width: 720px) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 720px) {
+		margin-top: 0;
+	}
+
 	.box-principal {
 		background-color: #8c90a7;
 		color: #fff;
 		padding-top: 190px;
 		padding-bottom: 150px;
 		margin-left: 90px;
+
+		@media (max-width: 720px) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin-left: 0;
+		}
 	}
 
 	p {
@@ -61,9 +77,18 @@ const Section = styled.section`
 
 	.header-box {
 		margin-left: 120px;
+
+		@media (max-width: 720px) {
+			margin-left: 0;
+		}
 	}
 	.box-body {
 		margin-left: 160px;
 		margin-right: 180px;
+
+		@media (max-width: 720px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 `;
