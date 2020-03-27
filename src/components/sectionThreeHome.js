@@ -27,13 +27,12 @@ const StyledBackgroundSection = styled(SectionThreeHome)`
 	height: 300px;
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+	/* background-attachment: fixed; */
+		@media (max-width: 720px) {
+			height: 170px;
+		}
   
 `;
 
 export default StyledBackgroundSection;
 
-// const Div = styled.div`
-// 	margin-top: 50px;
-
-// `

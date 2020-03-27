@@ -73,11 +73,22 @@ const SectionFairilyFourImage = () => {
 export default SectionFairilyFourImage;
 
 const Section = styled.section`
+		@media (max-width: 720px) {
+			background-color: #fff;
+		}
+		
 	#box {
 		margin-left: 150px;
 		margin-right: 150px;
 		position: relative;
 		top: -180px;
+
+		@media (max-width: 720px) {
+			margin-left: 0;
+			margin-right: 0;
+			position: initial;
+			top: 0;
+		}
 		.container-img  {
 			/* max-width: 345px; */
 			margin-bottom: 45px;

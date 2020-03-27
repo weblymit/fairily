@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { fab, faTwitter, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faStar, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faTwitter, faLinkedin, faFacebook, faInstagram);
+library.add(fab, faTwitter, faLinkedin, faFacebook, faInstagram, faStar, faHeart);
 
 const Footer = () => {
 	return (
@@ -29,19 +30,29 @@ const Footer = () => {
 				<div className="row align-items-center">
 					<div className="col-md-12">
 						<ul className="list-inline social-buttons mx-auto">
-							<li className="list-inline-item"><a href="mailto:contact@fairilyapp.com">Contactez-nous</a></li>
+							<li className="list-inline-item">
+								<a href="mailto:contact@fairilyapp.com">Contactez-nous</a>
+							</li>
 							<li className="list-inline-item">FAQ</li>
 							<li className="list-inline-item">Mentions légales</li>
 							<li className="list-inline-item">Livraisons et retours</li>
 							<li className="list-inline-item">CGV</li>
-							<li className="list-inline-item">Carrières</li>
+							<li className="list-inline-item">
+								<a href="https://www.linkedin.com/company/fairily/about/" target="_blank" rel="noopener noreferrer">
+									Carrières
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<hr style={{ backgroundColor: '#fff' }} />
 			<div className="text-center">
-				<span className="copyright ">{new Date().getFullYear()} Fairily. Conçu avec . et plein de .</span>
+				<span className="copyright ">
+					{new Date().getFullYear()} Fairily. Conçu avec{' '}
+					<FontAwesomeIcon icon={faHeart} style={{ fontSize: 15, width: 20 }} /> et plein d'{' '}
+					<FontAwesomeIcon icon={faStar} style={{ fontSize: 15, width: 20 }} />
+				</span>
 			</div>
 		</FooterDiv>
 	);

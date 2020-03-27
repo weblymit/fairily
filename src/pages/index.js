@@ -2,21 +2,18 @@ import React from 'react';
 // import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
+import SectionFairilyConcept from '../components/SectionFairilyConcept';
 import SectionThreeHome from '../components/sectionThreeHome';
 import SectionFairilyShopper from '../components/SectionFairilyShopper';
-import SectionFairilyConcept from '../components/SectionFairilyConcept';
 import SectionFairilyParcours from '../components/SectionFairilyParcours';
 import SectionFairilyExperience from '../components/SectionFairilyExperience';
+import SectionFairilyFourImage from '../components/SectionFairilyFourImage';
 import SectionFairilyAvantage from '../components/SectionFairilyAvantage';
 import SectionFour from '../components/sectionFourHome';
-// import SectionFourHome from '../components/sectionFourHome';
 import NewsLetter from '../components/NewsLetter';
 import SectionApp from '../components/SectionApp';
-// import Image from '../components/image';
-// import ImgLogoGris from '../images/symbole_seul_gris.png';
 import SEO from '../components/seo';
 import styled from 'styled-components';
-import SectionFairilyFourImage from '../components/SectionFairilyFourImage';
 
 class IndexPage extends React.Component {
 	render() {
@@ -24,19 +21,17 @@ class IndexPage extends React.Component {
 			<Layout>
 				<SEO title="Home" />
 
-				<Div className="">
+				<Div>
 					<SectionFairilyConcept />
-					{/* <section id="fairily_section_three"> */}
 					<SectionThreeHome />
-					{/* </section> */}
 					<SectionFairilyShopper />
 					<SectionFairilyParcours />
 					<SectionFairilyExperience />
 					<SectionFairilyFourImage />
 					<SectionFairilyAvantage />
-					<SectionFour />
-					<NewsLetter />
-					<SectionApp />
+					{/* <SectionFour /> */}
+					{/* <NewsLetter /> */}
+					{/* <SectionApp /> */}
 				</Div>
 			</Layout>
 		);

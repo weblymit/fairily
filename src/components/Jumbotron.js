@@ -42,6 +42,7 @@ const StyledBackgroundSection = styled(JumbotronHome)`
   background-size: cover;
   background-attachment: fixed;
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 55%);
+	width: 100%;
   
 `;
 

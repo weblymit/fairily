@@ -81,6 +81,11 @@ const DivNav = styled.div`
 		font-size: 1.2rem;
 		color: #000 !important;
 
+		@media (max-width: 500px) {
+			border-right: 0;
+			line-height: 2;
+		}
+		
 		&:last-child {
 			border-right: 0;
 		}

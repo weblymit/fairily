@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import etoile from '../images/etoile.svg';
 
 const SectionFairilyShopper = () => {
 	return (
 		<Section>
 			<div className="container">
 				<div className="row">
-					<div className="col-md-6">
+					<div className="col-md-6 firstCol">
 						<div id="block_community">
 							<h2>
 								Nos fairy’shoppers <br /> Nos fairy’makers
@@ -20,19 +19,27 @@ const SectionFairilyShopper = () => {
 							<div className="list_shopper">
 								<ul>
 									<li>
-										<FontAwesomeIcon icon={faStar} />
+										<span>
+											<img src={etoile} alt="star fairily" width="13" />
+										</span>
 										Dénichez des séries limitées
 									</li>
 									<li>
-										<FontAwesomeIcon icon={faStar} />
+										<span>
+											<img src={etoile} alt="star fairily" width="13" />
+										</span>
 										Négociez le prix d’achat
 									</li>
 									<li>
-										<FontAwesomeIcon icon={faStar} />
+										<span>
+											<img src={etoile} alt="star fairily" width="13" />
+										</span>
 										Osez prendre des risques
 									</li>
 									<li>
-										<FontAwesomeIcon icon={faStar} />
+										<span>
+											<img src={etoile} alt="star fairily" width="13" />
+										</span>
 										Devenez un Fairy’Shopper
 									</li>
 								</ul>
@@ -73,15 +80,32 @@ export default SectionFairilyShopper;
 
 const Section = styled.section`
 	padding: 70px 0;
+	@media (max-width: 720px) {
+		padding: 0 0;
+
+		.firstCol {
+			background-color: #fff;
+		}
+	}
+
 	#block_community {
 		background-color: #fff;
 		padding: 75px 75px 100px;
 		/* margin-right: 10%; */
 		margin-top: -170px;
 
+		@media (max-width: 720px) {
+			margin-top: 0;
+			padding: 65px 15px;
+		}
+
 		& .h1-size {
 			margin-top: 30px;
 			margin-bottom: 70px;
+
+			@media (max-width: 720px) {
+				margin-bottom: 40px;
+			}
 		}
 
 		& .list_shopper {
@@ -92,9 +116,7 @@ const Section = styled.section`
 				line-height: 2;
 			}
 
-			.svg-inline--fa.fa-w-18 {
-				width: .6em;
-				color: #777777;
+			span {
 				margin-right: 5px;
 			}
 		}
@@ -103,10 +125,20 @@ const Section = styled.section`
 		padding-left: 60px;
 		padding-right: 180px;
 
+		@media (max-width: 720px) {
+			padding: 60px 15px;
+		}
+
 		#button_div {
 			margin-top: 30px;
+
 			.fairily_button {
 				margin-bottom: 15px;
+				@media (max-width: 720px) {
+					margin-left: auto;
+					margin-right: auto;
+					justify-content: center;
+				}
 			}
 		}
 	}

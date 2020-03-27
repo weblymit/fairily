@@ -38,11 +38,36 @@ const Section = styled.section`
 	padding: 80px 0 290px;
 	margin-right: 90px;
 
+	@media (max-width: 720px) {
+		padding: 80px 0 10px;
+		margin-right: 0;
+	}
+
 	.box-experience {
 		margin-left: 50px;
+
+		@media (max-width: 720px) {
+			margin-left: 0;
+		}
+
+		h2 {
+			@media (max-width: 720px) {
+				padding-bottom: 20px;
+			}
+		}
+	}
+
+	.hl2 {
+		@media (max-width: 720px) {
+			display: none;
+		}
 	}
 
 	#box-shopper {
 		padding-left: 100px;
+
+		@media (max-width: 720px) {
+			padding: 30px 15px;
+		}
 	}
 `;

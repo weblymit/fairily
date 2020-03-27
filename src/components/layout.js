@@ -10,7 +10,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 // import { Jumbotron } from 'react-bootstrap';
 
-library.add(fab,faStar );
+library.add(fab, faStar);
 
 const Layout = ({ children }) => {
 	// const data = useStaticQuery(graphql`

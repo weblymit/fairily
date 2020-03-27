@@ -21,7 +21,7 @@ const SectionFairilyParcours = () => {
 		<Section id="fairily_parcour">
 			<div className="container-fluid">
 				<div className="row">
-					<div className="col-md-4">
+					<div className="col-md-4 imgCol">
 						<div className="cont-img">
 							<Img fluid={img1} />
 						</div>
@@ -41,7 +41,9 @@ const SectionFairilyParcours = () => {
 							<span className="badge badge-pill badge-primary">2</span>
 							<h3>Un coup de coeur</h3>
 							<p>
-								Faites une offre de prix à l’aveugle et laissez-vous prendre au jeu de la négociation ! Visualisez le nombre de Fairy’Shoppers intéressés et négociez à vos risques et périls ...
+								Faites une offre de prix à l’aveugle et laissez-vous prendre au jeu de la négociation !
+								Visualisez le nombre de Fairy’Shoppers intéressés et négociez à vos risques et périls
+								...
 							</p>
 						</div>
 						<div>
@@ -65,6 +67,10 @@ export default SectionFairilyParcours;
 
 const Section = styled.section`
 	padding: 80px 0;
+
+	@media (max-width: 720px) {
+		padding: 0;
+	}
 	p {
 		color: #fff;
 	}
@@ -73,20 +79,35 @@ const Section = styled.section`
 		margin-bottom: 0;
 	}
 
+	.imgCol {
+		@media (max-width: 720px) {
+			display: none;
+		}
+	}
+
 	.cont-img {
 		position: relative;
 		top: 190px;
 		z-index: 1;
 		width: 540px;
 		margin-left: 70px;
-		/* margin-right: 160px; */
-		/* height: auto; */
+
+		@media (max-width: 720px) {
+			top: 0;
+			position: initial;
+			width: initial;
+			margin-left: 0;
+		}
 	}
 
 	#parcour_block {
 		background-color: #bb6b44;
 		color: #fff;
 		padding: 120px 130px 120px 270px;
+
+		@media (max-width: 720px) {
+			padding: 70px 15px;
+		}
 
 		.h1-size {
 			color: #fff;

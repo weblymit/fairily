@@ -74,6 +74,11 @@ body {
   .logo_container {
     height: 40px;
     width: 40px;
+
+    @media (max-width: 720px) {
+      height: initial;
+    }
+
   }
 
   .btn-green {

@@ -69,9 +69,14 @@ const SectionFairilyConcept = () => {
 						</div>
 					</div>
 					<div className="col-md-6" id="fairily_purpose_contenu">
+						<div className="mobileOnly">
+							<h2>De nouvelles expériences à vivre</h2>
+							<p className="h1-size">Votre expérience</p>
+						</div>
 						<div className="logo_container">
 							<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
 						</div>
+
 						<h3>
 							FAIRILY VOUS PROPOSE DE <br /> DEVENIR ACTEUR DE VOTRE <br /> SHOPPING EN LIGNE
 						</h3>
@@ -96,10 +101,21 @@ const Div = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 
+	@media (max-width: 720px) {
+		padding-right: 15px;
+		/* padding-left: 15px; */
+	}
+
 	#section_concept {
 		padding-top: 80px;
 		margin-top: 50px;
 		/* height: 200px; */
+
+		@media (min-width: 320) {
+			.vl {
+				display: none;
+			}
+		}
 
 		.div_logo_header {
 			margin-top: -220px;
@@ -113,16 +129,28 @@ const Div = styled.div`
 		#votre_experience {
 			padding-left: 60px;
 			padding-bottom: 100px;
+
+			@media (max-width: 720px) {
+				display: none;
+			}
 		}
 	}
 
 	#fairily_concept {
 		height: 500px;
+		@media (min-width: 320px) {
+			height: auto;
+		}
+
 		.cont {
 			/* max-height: 280px; */
 			/* height: 700px; */
 			position: relative;
 			top: -180px;
+
+			@media (max-width: 720px) {
+				top: initial;
+			}
 		}
 
 		.col-img {
@@ -130,6 +158,12 @@ const Div = styled.div`
 			height: 620px;
 			overflow: hidden;
 			top: -300px;
+
+			@media (max-width: 720px) {
+				top: initial;
+				height: auto;
+				padding-bottom: 30px;
+			}
 		}
 
 		.logo_container {
@@ -139,12 +173,33 @@ const Div = styled.div`
 		#fairily_purpose {
 			background-color: #fff;
 			padding-top: 50px;
-			/* margin-bottom: 50px; */
+
+			@media (max-width: 720px) {
+				padding-bottom: 60px;
+			}
 
 			& #fairily_purpose_contenu {
 				padding-left: 60px;
-				/* height: 300px; */
-				/* margin-left:90px; */
+
+				@media (max-width: 720px) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+
+				.mobileOnly {
+					display: none;
+
+					@media (max-width: 720px) {
+						display: initial;
+						padding-bottom: 50px;
+					}
+				}
+
+				.logo_container {
+					@media (max-width: 720px) {
+						padding-top: 30px;
+					}
+				}
 			}
 		}
 	}

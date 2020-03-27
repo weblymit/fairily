@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../styles/navigation.scss'
 import {Link} from 'gatsby'
 
 const NavLink = ({ navLink, linkHref }) => {

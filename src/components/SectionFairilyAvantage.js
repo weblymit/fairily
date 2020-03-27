@@ -26,7 +26,7 @@ const SectionFairilyAvantage = () => {
 									limitées et négocient directement avec vous pour obtenir des produits de votre
 									création.
 								</p>
-								<h3>Les avanatges en tant que Fairy'Maker ?</h3>
+								<h3>Les avantages en tant que Fairy'Maker ?</h3>
 								<p>
 									Digitaliser votre métier, être visible sur une Marketplace pointue et différenciante
 									qui valorise votre savoir-faire et votre univers créatif, connaître vos futurs
@@ -53,9 +53,6 @@ const Section = styled.section`
 		padding-top: 190px;
 		padding-bottom: 150px;
 		margin-left: 90px;
-		/* position: relative; */
-		/* top: -340px; */
-		/* z-index: -1; */
 	}
 
 	p {
