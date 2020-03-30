@@ -38,7 +38,11 @@ const Footer = () => {
 							<li className="list-inline-item">Livraisons et retours</li>
 							<li className="list-inline-item">CGV</li>
 							<li className="list-inline-item">
-								<a href="https://www.linkedin.com/company/fairily/about/" target="_blank" rel="noopener noreferrer">
+								<a
+									href="https://www.linkedin.com/company/fairily/about/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									Carrières
 								</a>
 							</li>
@@ -66,9 +70,32 @@ const FooterDiv = styled.footer`
 	padding-top: 100px;
 	color: #fff;
 
+	@media (max-width: 720px) {
+		padding-top: 80px;
+		padding-bottom: 30px;
+	}
+
+	ul {
+		@media (max-width: 720px) {
+			display: grid;
+		}
+	}
+
+	img {
+		@media (max-width: 720px) {
+			margin-bottom: 50px;
+		}
+	}
+
 	li {
 		padding: 0 30px;
 		border-right: 1px solid;
+
+		@media (max-width: 720px) {
+			border-right: 0;
+			line-height: 2;
+			/* text-align: left; */
+		}
 
 		&:last-child {
 			border-right: 0;
@@ -83,6 +110,11 @@ const FooterDiv = styled.footer`
 	hr {
 		margin-top: 100px;
 		margin-bottom: 35px;
+
+		@media (max-width: 720px) {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
 	}
 
 	.copyright {

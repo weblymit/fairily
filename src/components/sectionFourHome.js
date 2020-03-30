@@ -29,6 +29,10 @@ const StyledBackgroundSection = styled(SectionFourHome)`
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
+		@media (max-width: 720px) {
+			height: 170px;
+		}
+  
 `;
 
 export default StyledBackgroundSection;

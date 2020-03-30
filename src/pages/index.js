@@ -29,9 +29,9 @@ class IndexPage extends React.Component {
 					<SectionFairilyExperience />
 					<SectionFairilyFourImage />
 					<SectionFairilyAvantage />
-					{/* <SectionFour /> */}
-					{/* <NewsLetter /> */}
-					{/* <SectionApp /> */}
+					<SectionFour />
+					<NewsLetter />
+					<SectionApp />
 				</Div>
 			</Layout>
 		);

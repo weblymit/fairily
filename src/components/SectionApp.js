@@ -34,7 +34,7 @@ const SectionApp = () => {
 	const appstore = data.appstore.childImageSharp.fluid;
 	return (
 		<Section id="app">
-			<div className="container-fluid" >
+			<div className="container-fluid">
 				<div className="row">
 					<div className="col-md-6" id="img_left">
 						<div className="box-img">
@@ -46,7 +46,9 @@ const SectionApp = () => {
 							<p className="h1-size">
 								Découvrez notre <br /> application <br /> mobile
 							</p>
-							<p>Les ventes éphémères repensées pour vous, <br/> avec vous et par vous !</p>
+							<p>
+								Les ventes éphémères repensées pour vous, <br /> avec vous et par vous !
+							</p>
 							<div className="app_store">
 								<Img fluid={appstore} />
 							</div>
@@ -68,11 +70,15 @@ const Section = styled.section`
 	height: 611px;
 	/* overflow: hidden; */
 
+	@media (max-width: 720px) {
+		height: auto;
+	}
+
 	.box-img {
 		height: 500px;
-		/* top: -100px;
-		position: relative; */
-
+		@media (max-width: 720px) {
+			height: auto;
+		}
 	}
 
 	#img_left {
@@ -80,17 +86,37 @@ const Section = styled.section`
 		position: relative;
 		top: -70px;
 		/* overflow: hidden; */
+
+		@media (max-width: 720px) {
+			top: 0;
+			position: initial;
+			padding-right: 0;
+		}
 	}
 
 	.box-right {
 		padding-left: 50px;
 		padding-top: 110px;
-		/* height: 400px; */
+
+		@media (max-width: 720px) {
+			padding: 60px 0;
+		}
+
+		.h1-size {
+			@media (max-width: 720px) {
+				margin-bottom: 40px;
+			}
+		}
 
 		.app_store {
 			width: 220px;
 			margin-bottom: 30px;
 			margin-top: 30px;
+
+			@media (max-width: 720px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 			& img {
 				border-radius: 10px;
@@ -99,6 +125,11 @@ const Section = styled.section`
 
 		.play_store {
 			width: 220px;
+
+			@media (max-width: 720px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 			& img {
 				border-radius: 10px;

@@ -65,8 +65,8 @@ const Section = styled.section`
 		margin-left: 90px;
 
 		@media (max-width: 720px) {
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 60px;
+			padding-bottom: 60px;
 			margin-left: 0;
 		}
 	}

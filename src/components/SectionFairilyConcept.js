@@ -174,8 +174,15 @@ const Div = styled.div`
 			background-color: #fff;
 			padding-top: 50px;
 
-			@media (max-width: 720px) {
+			@media (max-width: 599px) {
 				padding-bottom: 60px;
+				padding-top: 0;
+			}
+
+			.col-md-6 {
+				@media (max-width: 720px) {
+					padding-right: 0;
+				}
 			}
 
 			& #fairily_purpose_contenu {
@@ -184,6 +191,11 @@ const Div = styled.div`
 				@media (max-width: 720px) {
 					padding-left: 15px;
 					padding-right: 15px;
+				}
+
+				@media (min-width: 600px) {
+					padding-right: 30px;
+					padding-left: 30px;
 				}
 
 				.mobileOnly {

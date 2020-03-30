@@ -35,4 +35,3 @@ const StyledBackgroundSection = styled(SectionThreeHome)`
 `;
 
 export default StyledBackgroundSection;
-

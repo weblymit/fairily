@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Jumbotron, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import Navigation from '../components/nav/Navigation'
+import Navigation from '../components/nav/Navigation';
 
 import BackgroundImage from 'gatsby-background-image';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -43,6 +43,10 @@ const StyledBackgroundSection = styled(JumbotronHome)`
   background-attachment: fixed;
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 55%);
 	width: 100%;
+
+	@media (max-width: 720px) {
+		height: 90vh;
+	}
   
 `;
 

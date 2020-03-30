@@ -11,7 +11,7 @@ const SectionFairilyShopper = () => {
 					<div className="col-md-6 firstCol">
 						<div id="block_community">
 							<h2>
-								Nos fairy’shoppers <br /> Nos fairy’makers
+								Nos Fairy’shoppers <br /> Nos Fairy’makers
 							</h2>
 							<p className="h1-size">
 								Notre <br /> communauté
@@ -131,6 +131,12 @@ const Section = styled.section`
 
 		#button_div {
 			margin-top: 30px;
+
+			@media (max-width: 720px) {
+				display: flex;
+				flex-direction: column;
+				margin-top: 50px;
+			}
 
 			.fairily_button {
 				margin-bottom: 15px;

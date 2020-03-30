@@ -45,7 +45,7 @@ class Navigation extends Component {
 					<Container>
 						<NavbarBrand logo={logo} />
 						<Navbar.Toggle aria-controls="basic-navbar-nav">
-							Menu {''}
+							{/* Menu {''} */}
 							{/* <FontAwesomeIcon icon={faBars} /> */}
 						</Navbar.Toggle>
 						<Navbar.Collapse id="basic-navbar-nav">
@@ -85,9 +85,14 @@ const DivNav = styled.div`
 			border-right: 0;
 			line-height: 2;
 		}
-		
+
 		&:last-child {
 			border-right: 0;
 		}
+	}
+
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .5);
+		border-color: #0000ff00 !important;
 	}
 `;
