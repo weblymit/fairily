@@ -11,7 +11,7 @@ const JumbotronHome = ({ className }) => {
 		query {
 			jumbo: file(relativePath: { eq: "imgJumbo.jpg" }) {
 				childImageSharp {
-					fluid(quality: 90, maxWidth: 900) {
+					fluid(quality: 80, maxWidth: 700) {
 						...GatsbyImageSharpFluid
 					}
 				}
@@ -37,15 +37,15 @@ const JumbotronHome = ({ className }) => {
 };
 
 const StyledBackgroundSection = styled(JumbotronHome)`
-	height: 110vh;
+	height: 100vh;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 55%);
-	width: 100%;
+	/* width: 100%; */
 
-	@media (max-width: 720px) {
-		height: 90vh;
+	@media (max-width: 768px) {
+		height: 80vh;
 	}
   
 `;

@@ -16,12 +16,12 @@ const Footer = () => {
 	return (
 		<FooterDiv className="footer">
 			<div id="fee-footer">
-				<img src={imgFooter} alt="fairily fée image" />
+				<img src={imgFooter} alt="fairily fée " />
 			</div>
 			<div className="container text-center">
 				<div className="row align-items-center mb-5">
 					<div className="col-md-6" id="logo-fairily">
-						<img src={img2} alt="" className="img-fluid" width="250" />
+						<img src={img2} alt=" fairily app" className="img-fluid" width="250" />
 					</div>
 					<div className="col-md-6">
 						<a href="https://www.facebook.com/Fairilyapp/" target="_blank" rel="noopener noreferrer">
