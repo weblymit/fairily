@@ -6,12 +6,12 @@ import etoile from '../images/etoile.svg';
 const SectionFairilyShopper = () => {
 	return (
 		<Section>
-			<div className="container">
-				<div className="row">
-					<div className="col-md-6 firstCol">
-						<div id="block_community">
+			<div className="row">
+				<div className="col-md-6 col-lg-6 firstCol">
+					<div id="block_community">
+						<div className="container">
 							<h2>
-								Nos Fairy’shoppers <br /> Nos Fairy’makers
+								Nos Fairy’Shoppers <br /> Nos Fairy’Makers
 							</h2>
 							<p className="h1-size">
 								Notre <br /> communauté
@@ -46,8 +46,10 @@ const SectionFairilyShopper = () => {
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div className="col-md-6" id="block_community_two">
+				<div className="col-md-6 col-lg-6" id="block_community_two">
+					<div className="container">
 						<h3 className="myH3">
 							Fairily est le dénicheur <br /> des séries limitées <br /> au juste prix
 						</h3>
@@ -79,32 +81,67 @@ const SectionFairilyShopper = () => {
 export default SectionFairilyShopper;
 
 const Section = styled.section`
+	margin-left: 15px;
+	margin-right: 15px;
 	padding: 70px 0;
-	@media (max-width: 720px) {
-		padding: 0 0;
 
+	@media (min-width: 320px) {
+		padding: 0 0;
 		.firstCol {
 			background-color: #fff;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	@media (min-width: 768px) {
+		.firstCol {
+			background-color: initial;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	@media (min-width: 992px) {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 40px 0;
+		.firstCol {
+			padding-left: 95px;
 		}
 	}
 
 	#block_community {
-		background-color: #fff;
+		/* background-color: #fff;
 		padding: 75px 75px 100px;
-		/* margin-right: 10%; */
-		margin-top: -170px;
+		margin-right: 10%;
+		margin-top: -170px; */
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
+			background-color: #fff;
 			margin-top: 0;
+			padding: 65px 0;
+		}
+
+		@media (min-width: 768px) {
+			/* margin-top: 0; */
 			padding: 65px 15px;
+			margin-top: -120px;
+		}
+
+		@media (min-width: 992px) {
+			padding: 30px 35px 150px;
+			margin-top: -110px;
+			margin-right:40px;
 		}
 
 		& .h1-size {
 			margin-top: 30px;
 			margin-bottom: 70px;
 
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				margin-bottom: 40px;
+			}
+			@media (min-width: 768px) {
+				margin-bottom: 70px;
 			}
 		}
 
@@ -121,12 +158,19 @@ const Section = styled.section`
 			}
 		}
 	}
+
 	#block_community_two {
 		padding-left: 60px;
 		padding-right: 180px;
 
-		@media (max-width: 720px) {
-			padding: 60px 15px;
+		@media (min-width: 320px) {
+			padding: 60px 0;
+		}
+
+		@media (min-width: 992px) {
+			padding-left: 40px;
+			padding-right: 180px;
+			padding-top: 30px;
 		}
 
 		#button_div {
@@ -140,10 +184,19 @@ const Section = styled.section`
 
 			.fairily_button {
 				margin-bottom: 15px;
-				@media (max-width: 720px) {
-					margin-left: auto;
-					margin-right: auto;
+				@media (max-width: 768px) {
+					margin-left: 40px;
+					margin-right: 40px;
 					justify-content: center;
+				}
+
+				& .btn {
+					@media (min-width: 320px) {
+						width: 100%;
+					}
+					@media (min-width: 992px) {
+						width: 70%;
+					}
 				}
 			}
 		}

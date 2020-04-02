@@ -73,29 +73,42 @@ const SectionFairilyFourImage = () => {
 export default SectionFairilyFourImage;
 
 const Section = styled.section`
-		@media (max-width: 720px) {
-			background-color: #fff;
-		}
-		
 	#box {
-		margin-left: 150px;
+		/* margin-left: 150px;
 		margin-right: 150px;
 		position: relative;
-		top: -180px;
+		top: -180px; */
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			margin-left: 0;
 			margin-right: 0;
 			position: initial;
 			top: 0;
+			padding: 60px 0;
+		}
+
+		@media (min-width: 768px) {
+			position: relative;
+			top: -180px;
+			padding: 0;
 		}
 		.container-img  {
 			/* max-width: 345px; */
 			margin-bottom: 45px;
+			@media (min-width: 992px) {
+				margin-left: auto;
+			}
 		}
 		.container-img-2  {
 			/* max-width: 345px; */
 			margin-bottom: 45px;
+		}
+
+		.container-img,
+		.container-img-2  {
+			@media (min-width: 992px) {
+				max-width: 345px;
+			}
 		}
 	}
 `;

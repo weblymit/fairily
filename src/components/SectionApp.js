@@ -41,20 +41,23 @@ const SectionApp = () => {
 							<Img fluid={img1} alt="fairily photo" />
 						</div>
 					</div>
-					<div className="col-md-6">
+					<div className="col-md-6 colRight">
 						<div className="box-right">
-							<p className="h1-size">
-								Découvrez notre <br /> application <br /> mobile
-							</p>
-							<p>
-								Les ventes éphémères repensées pour vous, <br /> avec vous et par vous !
-							</p>
-							<div className="app_store">
-								<Img fluid={appstore} />
+							<div className="container">
+								<p className="h1-size">
+									Découvrez notre <br /> application <br /> mobile
+								</p>
+								<p>
+									Les ventes éphémères repensées pour vous, <br /> avec vous et par vous !
+								</p>
+								<div className="app_store">
+									<Img fluid={appstore} />
+								</div>
+								<div className="play_store">
+									<Img fluid={gstore} />
+								</div>
 							</div>
-							<div className="play_store">
-								<Img fluid={gstore} />
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -70,14 +73,30 @@ const Section = styled.section`
 	height: 611px;
 	/* overflow: hidden; */
 
-	@media (max-width: 720px) {
+	@media (min-width: 320px) {
 		height: auto;
+	}
+	@media (min-width: 768px) {
+		padding: 90px 0;
+	}
+	@media (min-width: 992px) {
+		padding: 90px 0 28px;
 	}
 
 	.box-img {
-		height: 500px;
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			height: auto;
+		}
+
+		@media (min-width: 768px) {
+			height: 500px;
+		}
+	}
+
+	.colRight {
+		@media (min-width: 320px) {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 
@@ -87,10 +106,16 @@ const Section = styled.section`
 		top: -70px;
 		/* overflow: hidden; */
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			top: 0;
 			position: initial;
 			padding-right: 0;
+		}
+
+		@media (min-width: 992px) {
+			padding-left: 0;
+			position: relative;
+			top: -170px;
 		}
 	}
 
@@ -98,24 +123,45 @@ const Section = styled.section`
 		padding-left: 50px;
 		padding-top: 110px;
 
-		@media (max-width: 720px) {
-			padding: 60px 0;
+		@media (min-width: 320px) {
+			padding: 60px 0 80px;
+		}
+
+		@media (min-width: 768px) {
+			padding-left: 20px;
+			padding-top: 0;
+		}
+
+		@media (min-width: 992px) {
+			padding: 0 0 60px 50px;
+
 		}
 
 		.h1-size {
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				margin-bottom: 40px;
 			}
 		}
 
 		.app_store {
-			width: 220px;
 			margin-bottom: 30px;
 			margin-top: 30px;
-
-			@media (max-width: 720px) {
+			
+			@media (min-width: 320px) {
+				width: 220px;
 				margin-left: auto;
 				margin-right: auto;
+			}
+
+			@media (min-width: 768px) {
+				/* width: 220px; */
+			}
+
+			@media (min-width: 992px) {
+				margin-bottom: 30px;
+				margin-top: 30px;
+				margin-left: 0;
+				margin-right: 0;
 			}
 
 			& img {
@@ -124,11 +170,20 @@ const Section = styled.section`
 		}
 
 		.play_store {
-			width: 220px;
-
-			@media (max-width: 720px) {
+			
+			@media (min-width: 320px) {
+				width: 220px;
 				margin-left: auto;
 				margin-right: auto;
+			}
+
+			@media (min-width: 768px) {
+				/* width: 220px; */
+			}
+
+			@media (min-width: 992px) {
+				margin-left: 0;
+				margin-right: 0;
 			}
 
 			& img {

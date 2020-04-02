@@ -31,15 +31,27 @@ const Section = styled.section`
 	padding-left: 240px;
 	margin-left: 95px;
 
-	@media (max-width: 720px) {
+	@media (min-width: 320px) {
 		padding-top: 60px;
 		padding-bottom: 90px;
 		padding-left: 0;
 		margin-left: 0;
 	}
 
+	@media (min-width: 768px) {
+		padding-top: 130px;
+		padding-bottom: 190px;
+	}
+
+	@media (min-width: 992px) {
+		padding-top: 100px;
+		padding-bottom: 190px;
+		padding-left: 240px;
+		margin-left: 95px;
+	}
+
 	.h1-size {
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			margin-bottom: 40px;
 		}
 	}
@@ -48,10 +60,14 @@ const Section = styled.section`
 		margin-top: 50px;
 
 		form {
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
+			}
+
+			@media (min-width: 992px) {
+				display: initial;
 			}
 		}
 
@@ -59,7 +75,7 @@ const Section = styled.section`
 			text-transform: uppercase;
 			margin-right: 20px;
 
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				text-align: center;
 				font-size: 18px;
 				margin-bottom: 20px;
@@ -71,8 +87,43 @@ const Section = styled.section`
 			border-bottom-width: 2px;
 			margin-right: 30px;
 
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				margin-bottom: 40px;
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+
+			@media (min-width: 768px) {
+				margin-bottom: 40px;
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+
+			@media (min-width: 992px) {
+				margin-bottom: 10px;
+				margin-left: 10px;
+				margin-right: 0;
+				width: 30%;
+			}
+		}
+
+		.btn-green {
+			text-align: center;
+			@media (min-width: 320px) {
+				margin-left: 70px;
+				margin-right: 70px;
+			}
+
+			@media (min-width: 768px) {
+				margin-left: 170px;
+				margin-right: 170px;
+			}
+
+			@media (min-width: 992px) {
+				margin-left: 40px;
+				margin-right: 0;
+				width: 21%;
+				padding: 10px 0;
 			}
 		}
 	}

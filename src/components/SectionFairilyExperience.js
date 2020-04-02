@@ -38,27 +38,42 @@ const Section = styled.section`
 	padding: 80px 0 290px;
 	margin-right: 90px;
 
-	@media (max-width: 720px) {
+	@media (min-width: 320px) {
 		padding: 80px 0 10px;
 		margin-right: 0;
 	}
+	@media (min-width: 768px) {
+		padding: 280px 15px;
+		margin-right: 50px;
+		margin-top: -190px;
+	}
+
+	@media (min-width: 992px) {
+		padding: 830px 15px 280px;
+		margin-right: 60px;
+		margin-top: -790px;
+	}
 
 	.box-experience {
-		margin-left: 50px;
+		/* margin-left: 50px; */
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			margin-left: 0;
 		}
 
+		@media (min-width: 992px) {
+			margin-left: 130px;
+		}
+
 		h2 {
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				padding-bottom: 20px;
 			}
 		}
 	}
 
 	.hl2 {
-		@media (max-width: 720px) {
+		@media (max-width: 992px) {
 			display: none;
 		}
 	}
@@ -66,8 +81,11 @@ const Section = styled.section`
 	#box-shopper {
 		padding-left: 100px;
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			padding: 30px 15px;
+		}
+		@media (min-width: 992px) {
+			padding: 30px 15px 30px 80px;
 		}
 	}
 `;

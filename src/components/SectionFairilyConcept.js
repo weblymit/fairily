@@ -47,7 +47,6 @@ const SectionFairilyConcept = () => {
 					</div>
 					<div className="col-md-6" id="votre_experience">
 						<div className="hl" />
-
 						<h2>
 							De nouvelles expériences <br /> à vivre
 						</h2>
@@ -65,26 +64,30 @@ const SectionFairilyConcept = () => {
 								id="img_parcour"
 								// imgStyle={{ objectFit: 'contain' }}
 								className="img-fluid"
+								// style={{ maxHeight: 'calc(50vh - 4rem)' }}
+								// imgStyle={{ objectFit: 'cover' }}
 							/>
 						</div>
 					</div>
 					<div className="col-md-6" id="fairily_purpose_contenu">
-						<div className="mobileOnly">
-							<h2>De nouvelles expériences à vivre</h2>
-							<p className="h1-size">Votre expérience</p>
-						</div>
-						<div className="logo_container">
-							<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
-						</div>
+						<div className="container">
+							<div className="mobileOnly">
+								<h2>De nouvelles expériences à vivre</h2>
+								<p className="h1-size">Votre expérience</p>
+							</div>
+							<div className="logo_container">
+								<Img fluid={logo1} alt="Fairily logo gris" className="img-fluid" />
+							</div>
 
-						<h3>
-							FAIRILY VOUS PROPOSE DE <br /> DEVENIR ACTEUR DE VOTRE <br /> SHOPPING EN LIGNE
-						</h3>
-						<p>
-							Chez nous, vous êtes au cœur de l’expérience. <br /> Vous avez le pouvoir de décision sur le
-							produit et le prix. <br />
-							Découvrez une sélection décoration, objets design, <br /> bijoux et accessoires.
-						</p>
+							<h3>
+								FAIRILY VOUS PROPOSE DE <br /> DEVENIR ACTEUR DE VOTRE <br /> SHOPPING EN LIGNE
+							</h3>
+							<p>
+								Chez nous, vous êtes au cœur de l’expérience. <br /> Vous avez le pouvoir de décision
+								sur le produit et le prix. <br />
+								Découvrez une sélection décoration, objets design, <br /> bijoux et accessoires.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -101,9 +104,9 @@ const Div = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 
-	@media (max-width: 720px) {
+	@media (min-width: 320px) {
 		padding-right: 15px;
-		/* padding-left: 15px; */
+		padding-left: 15px;
 	}
 
 	#section_concept {
@@ -111,7 +114,7 @@ const Div = styled.div`
 		margin-top: 50px;
 		/* height: 200px; */
 
-		@media (min-width: 320) {
+		@media (min-width: 320px) {
 			.vl {
 				display: none;
 			}
@@ -119,6 +122,15 @@ const Div = styled.div`
 
 		.div_logo_header {
 			margin-top: -220px;
+
+			@media (min-width: 320px) {
+				margin-top: -220px;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			@media (min-width: 600px) {
+				margin-top: -200px;
+			}
 
 			& #logo_1 {
 				margin-right: 24px;
@@ -130,8 +142,13 @@ const Div = styled.div`
 			padding-left: 60px;
 			padding-bottom: 100px;
 
-			@media (max-width: 720px) {
+			@media (max-width: 767px) {
 				display: none;
+			}
+
+			@media (min-width: 768px) {
+				padding-left: 60px;
+				padding-bottom: 0;
 			}
 		}
 	}
@@ -142,28 +159,78 @@ const Div = styled.div`
 			height: auto;
 		}
 
+		@media (min-width: 768px) {
+			height: auto;
+		}
+
 		.cont {
 			/* max-height: 280px; */
 			/* height: 700px; */
-			position: relative;
-			top: -180px;
+			/* position: relative;
+			top: -180px; */
 
-			@media (max-width: 720px) {
-				top: initial;
+			@media (min-width: 320px) {
+				position: initial;
+				top: 0;
+				max-height: calc(60vh);
+				object-fit: cover !important;
+			}
+
+			@media (min-width: 340px) {
+				max-height: calc(70vh);
+			}
+
+			@media (min-width: 380px) {
+				max-height: calc(75vh);
+			}
+			@media (min-width: 400px) {
+				max-height: calc(80vh);
+			}
+			@media (min-width: 420px) {
+				max-height: calc(85vh);
+			}
+			@media (min-width: 450px) {
+				max-height: calc(92vh);
+			}
+			@media (min-width: 475px) {
+				max-height: calc(96vh);
+			}
+			@media (min-width: 500px) {
+				max-height: calc(100vh);
+			}
+
+			@media (min-width: 768px) {
+				/* max-height: auto; */
+				height: 700px;
+				position: relative;
+				top: 0;
 			}
 		}
 
 		.col-img {
-			padding-left: 0;
+			/* padding-left: 0;
 			height: 620px;
-			overflow: hidden;
-			top: -300px;
+			overflow: hidden; */
+			/* top: -300px; */
 
-			@media (max-width: 720px) {
+			@media (min-width: 320px) {
 				top: initial;
 				height: auto;
 				padding-bottom: 30px;
+				overflow: hidden;
 			}
+			
+			@media (min-width: 768px) {
+				height: 620px;
+				top: -250px;
+			}
+
+			@media (min-width: 992px) {
+				height: 620px;
+				top: -200px;
+				left: -95px;
+			}
+
 		}
 
 		.logo_container {
@@ -172,38 +239,71 @@ const Div = styled.div`
 
 		#fairily_purpose {
 			background-color: #fff;
-			padding-top: 50px;
 
 			@media (max-width: 599px) {
 				padding-bottom: 60px;
 				padding-top: 0;
 			}
+			@media (min-width: 600px) {
+				padding-bottom: 60px;
+				padding-top: 0;
+			}
+			@media (min-width: 768px) {
+				padding-top: 0;
+				margin-bottom: -200px;
+			}
+			@media (min-width: 992px) {
+				padding-top: 0;
+				margin-bottom: -100px;
+				margin-left: 80px;
+			}
 
 			.col-md-6 {
-				@media (max-width: 720px) {
+				@media (min-width: 320px) {
 					padding-right: 0;
+					padding-left: 0;
+				}
+				@media (min-width: 768px) {
+					padding-right: 15px;
+					padding-left: 15px;
 				}
 			}
 
 			& #fairily_purpose_contenu {
 				padding-left: 60px;
 
-				@media (max-width: 720px) {
-					padding-left: 15px;
-					padding-right: 15px;
+				@media (min-width: 320px) {
+					padding-left: 0;
+					padding-right: 0;
+					margin-top: 60px;
 				}
 
-				@media (min-width: 600px) {
-					padding-right: 30px;
-					padding-left: 30px;
+				@media (min-width: 599px) {
+					padding-top: 40px;
+					padding-left: initial;
+				}
+				@media (min-width: 768px) {
+					padding-top: 40px;
+					padding-left: 50px;
+					padding-right: initial;
+					margin-top: 0;
+				}
+				@media (min-width: 992px) {
+					padding-top: 40px;
+					padding-left: initial;
+					padding-right: initial;
+					margin-top: 0;
 				}
 
 				.mobileOnly {
-					display: none;
+					@media (min-width: 320px) {
+						h2  {
+							padding-bottom: 15px;
+						}
+					}
 
-					@media (max-width: 720px) {
-						display: initial;
-						padding-bottom: 50px;
+					@media (min-width: 768px) {
+						display: none;
 					}
 				}
 

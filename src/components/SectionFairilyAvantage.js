@@ -47,14 +47,22 @@ export default SectionFairilyAvantage;
 const Section = styled.section`
 	margin-top: -310px;
 
-	.hl3 {
-		@media (max-width: 720px) {
-			display: none;
-		}
+	@media (min-width: 320px) {
+		margin-top: 0;
 	}
 
-	@media (max-width: 720px) {
-		margin-top: 0;
+	@media (min-width: 768px) {
+		margin-top: -310px;
+	}
+
+	@media (min-width: 992px) {
+		margin-left: 160px;
+	}
+
+	.hl3 {
+		@media (max-width: 992px) {
+			display: none;
+		}
 	}
 
 	.box-principal {
@@ -64,9 +72,15 @@ const Section = styled.section`
 		padding-bottom: 150px;
 		margin-left: 90px;
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			padding-top: 60px;
 			padding-bottom: 60px;
+			margin-left: 0;
+		}
+
+		@media (min-width: 768px) {
+			padding-top: 190px;
+			padding-bottom: 150px;
 			margin-left: 0;
 		}
 	}
@@ -78,17 +92,32 @@ const Section = styled.section`
 	.header-box {
 		margin-left: 120px;
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			margin-left: 0;
 		}
+
+		@media (min-width: 992px) {
+					margin-left: 145px;
+		}
 	}
+
 	.box-body {
 		margin-left: 160px;
 		margin-right: 180px;
 
-		@media (max-width: 720px) {
+		@media (min-width: 320px) {
 			margin-left: 0;
 			margin-right: 0;
+		}
+
+		@media (min-width: 768px) {
+			margin-left: 60px;
+			margin-right: 0;
+		}
+
+		@media (min-width: 992px) {
+			margin-left: 140px;
+			margin-right: 180px;
 		}
 	}
 `;
