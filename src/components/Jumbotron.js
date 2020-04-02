@@ -53,7 +53,7 @@ const StyledBackgroundSection = styled(JumbotronHome)`
 export default StyledBackgroundSection;
 
 const Div = styled.div`
-	.jumbotron {
+	/* .jumbotron {
 		height: 85vh;
 		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 64%);
 		background-color: #bb6b44;
@@ -62,5 +62,5 @@ const Div = styled.div`
 		p {
 			color: #fff;
 		}
-	}
+	} */
 `;

@@ -114,7 +114,7 @@ const Div = styled.div`
 		margin-top: 50px;
 		/* height: 200px; */
 
-		@media (min-width: 320px) {
+		@media (max-width: 768px) {
 			.vl {
 				display: none;
 			}
