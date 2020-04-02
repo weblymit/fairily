@@ -51,7 +51,7 @@ const SectionFairilyShopper = () => {
 				<div className="col-md-6 col-lg-6" id="block_community_two">
 					<div className="container">
 						<h3 className="myH3">
-							Fairily est le dénicheur <br /> des séries limitées <br /> au juste prix
+							Fairily est le dénicheur <br /> de séries limitées <br /> au juste prix
 						</h3>
 						<p>
 							Dénichez d’authentiques produits sélectionnés avec soin, négociez le prix d’achat à travers

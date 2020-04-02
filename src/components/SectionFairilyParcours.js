@@ -31,7 +31,7 @@ const SectionFairilyParcours = () => {
 							<p className="parcour_block_firstP">
 								Découverte des séries <br /> limitées de la semaine
 							</p>
-							<p className="h1-size">Notre parcours</p>
+							<p className="h1-size">Votre parcours</p>
 
 							<div>
 								<span className="badge badge-pill badge-primary">1</span>

@@ -5,7 +5,7 @@ const NavbarBrand = ({ logo }) => {
 	return (
 		<Div>
 			<Link to="/" className="navbar-brand">
-				<img src={logo} alt="logo weblymit zacharie kabasele" />
+				<img src={logo} alt="logo fairily Maxime Collange" />
 			</Link>
 		</Div>
 	);
@@ -15,8 +15,7 @@ export default NavbarBrand;
 const Div = styled.div`
 	img {
 		width: 200px;
-
-		@media (max-width: 720px) {
+		@media (max-width: 767px) {
 			width: 120px;
 		}
 	}
