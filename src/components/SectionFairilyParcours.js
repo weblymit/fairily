@@ -54,7 +54,7 @@ const SectionFairilyParcours = () => {
 							</div>
 							<div>
 								<span className="badge badge-pill badge-primary">4</span>
-								<h3>Le fairy'Maker accèpte votre proposition ?</h3>
+								<h3>Le fairy'Maker accepte votre proposition ?</h3>
 								<p>La magie opère. À vous de jouer !</p>
 							</div>
 						</div>

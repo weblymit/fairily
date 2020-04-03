@@ -82,10 +82,11 @@ const SectionFairilyConcept = () => {
 							<h3>
 								FAIRILY VOUS PROPOSE DE <br /> DEVENIR ACTEUR DE VOTRE <br /> SHOPPING EN LIGNE
 							</h3>
-							<p>
+							<p className="fairily_purpowe_paragraph">
 								Chez nous, vous êtes au cœur de l’expérience. <br /> Vous avez le pouvoir de décision
 								sur le produit et le prix. <br />
-								Découvrez une sélection décoration, objets design, <br /> bijoux et accessoires.
+								Découvrez une sélection décoration, objets design, <br className="mobile-move" /> bijoux
+								et accessoires.
 							</p>
 						</div>
 					</div>
@@ -219,7 +220,7 @@ const Div = styled.div`
 				padding-bottom: 30px;
 				overflow: hidden;
 			}
-			
+
 			@media (min-width: 768px) {
 				height: 620px;
 				top: -250px;
@@ -230,7 +231,6 @@ const Div = styled.div`
 				top: -200px;
 				left: -95px;
 			}
-
 		}
 
 		.logo_container {
@@ -293,6 +293,12 @@ const Div = styled.div`
 					padding-left: initial;
 					padding-right: initial;
 					margin-top: 0;
+				}
+
+				.mobile-move {
+					@media (max-width: 768px) {
+						display: none;
+					}
 				}
 
 				.mobileOnly {
