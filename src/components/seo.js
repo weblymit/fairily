@@ -40,11 +40,11 @@ function SEO({ description, lang, meta, title, image }) {
 			meta={[
 				{
 					name: `description`,
-					content: metaDescription
+					content: {metaDescription}
 				},
 				{
 					name: `image`,
-					content: metaImage
+					content: {metaImage}
 				},
 				{
 					property: `og:title`,
@@ -56,7 +56,7 @@ function SEO({ description, lang, meta, title, image }) {
 				},
 				{
 					property: `og:description`,
-					content: metaDescription
+					content: {metaDescription}
 				},
 				{
 					property: `og:type`,

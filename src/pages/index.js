@@ -20,7 +20,7 @@ class IndexPage extends React.Component {
 		return (
 			<Layout>
 				<SEO 
-				title="Fairily | Bienvenue chez Fairily."
+				title="Fairily | Bienvenue chez Fairily"
 			/>
 
 				<Div>
