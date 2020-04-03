@@ -1,8 +1,10 @@
 module.exports = {
 	siteMetadata: {
 		title: `Fairily`,
-		description: `Voici le site de la startup Fairily`,
-		author: `@fairily`,
+		description: `Fairily vous propose de devenir acteur de votre shopping en ligne Chez nous, vous êtes au cœur de l’expérience.Vous avez le pouvoir de décision sur le produit et le prix`,
+		author: `@weblymit`,
+		image: '/images/favicon.png',
+		siteUrl: `https://fairily.io`,
 		menuLinLinks: [
 			{
 				name: 'item1',
@@ -61,23 +63,23 @@ module.exports = {
 		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
-		// typography
-		// {
-		// 	resolve: `gatsby-plugin-typography`,
-		// 	options: {
-		// 		pathToConfigModule: `src/utils/typography`
-		// 	}
-		// },
+		
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `Fairily`,
+				short_name: `Fairily`,
 				start_url: `/`,
-				background_color: `#663399`,
+				background_color: `#adc9ba`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				icon: `src/images/symbole_seul_gris.png` // This path is relative to the root of the site.
+				icon: `src/images/favicon.png` // This path is relative to the root of the site.
+			}
+		},
+		{
+			resolve: `gatsby-plugin-offline`,
+			options: {
+				precachePages: [ `/` ]
 			}
 		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality
