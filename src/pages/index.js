@@ -19,8 +19,9 @@ class IndexPage extends React.Component {
 	render() {
 		return (
 			<Layout>
-							<SEO title="Bienvenue chez Fairily. Nous vous proposons de devenir acteur de votre shopping en ligne Chez nous, vous êtes au cœur de l’expérience.
-			Vous avez le pouvoir de décision sur le produit et le prix." />
+				<SEO 
+				title="Fairily | Bienvenue chez Fairily."
+			/>
 
 				<Div>
 					<SectionFairilyConcept />
