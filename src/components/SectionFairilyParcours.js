@@ -127,7 +127,7 @@ const Section = styled.section`
 			position: relative;
 			top: 190px;
 			z-index: 1;
-			width: 450px;
+			width: calc(41vw);
 			margin-left: 70px;
 		}
 	}
@@ -148,7 +148,7 @@ const Section = styled.section`
 		}
 
 		@media (min-width: 992px) {
-			padding: 120px 220px 120px 257px;
+			padding: 120px 120px 120px 297px;
 		}
 
 		.h1-size {
