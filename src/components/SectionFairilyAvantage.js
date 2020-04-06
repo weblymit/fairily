@@ -99,6 +99,10 @@ const Section = styled.section`
 		@media (min-width: 992px) {
 					margin-left: 145px;
 		}
+
+		h2 {
+			color: #595958;
+		}
 	}
 
 	.box-body {

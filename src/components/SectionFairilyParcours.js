@@ -49,7 +49,7 @@ const SectionFairilyParcours = () => {
 							</div>
 							<div>
 								<span className="badge badge-pill badge-primary">3</span>
-								<h3>Validez votre selection</h3>
+								<h3>Validez votre sélection</h3>
 								<p>Avant qu’elle ne s’évapore...</p>
 							</div>
 							<div>
@@ -112,8 +112,13 @@ const Section = styled.section`
 			position: relative;
 			top: 190px;
 			z-index: 1;
-			width: 540px;
 			width: 300px;
+			margin-left: 0;
+			max-height: calc(100vh);
+		}
+
+		@media (min-width: 830px) {
+			width: 340px;
 			margin-left: 0;
 			max-height: calc(100vh);
 		}
@@ -122,7 +127,7 @@ const Section = styled.section`
 			position: relative;
 			top: 190px;
 			z-index: 1;
-			width: 520px;
+			width: 450px;
 			margin-left: 70px;
 		}
 	}

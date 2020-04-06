@@ -56,7 +56,7 @@ const SectionFairilyShopper = () => {
 						<p>
 							Dénichez d’authentiques produits sélectionnés avec soin, négociez le prix d’achat à travers
 							une expérience intuitive, personnalisée et ludique. Devenez l’acteur de vos découvertes.
-							Fairily est un véritable créateur des liens et des émotions entre acheteurs en recherche de
+							Fairily est un véritable créateur et de liens et d'émotions entre acheteurs en recherche de
 							plaisir, découverte et artisans créateurs.
 						</p>
 						<div id="button_div">

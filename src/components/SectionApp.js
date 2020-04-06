@@ -45,9 +45,10 @@ const SectionApp = () => {
 						<div className="box-right">
 							<div className="container">
 								<p className="h1-size">
-									Découvrez notre <br /> application <br /> mobile
+									Découvrez notre <br className="brMObile" /> application <br className="brMObile" />
+									mobile
 								</p>
-								<p>
+								<p className="textCenter">
 									Les ventes éphémères repensées pour vous, <br /> avec vous et par vous !
 								</p>
 								<div className="app_store">
@@ -57,7 +58,6 @@ const SectionApp = () => {
 									<Img fluid={gstore} />
 								</div>
 							</div>
-							
 						</div>
 					</div>
 				</div>
@@ -80,7 +80,8 @@ const Section = styled.section`
 		padding: 90px 0;
 	}
 	@media (min-width: 992px) {
-		padding: 90px 0 28px;
+		height: auto;
+		padding: 0;
 	}
 
 	.box-img {
@@ -91,12 +92,19 @@ const Section = styled.section`
 		@media (min-width: 768px) {
 			height: 500px;
 		}
+		@media (min-width: 992px) {
+			height: auto;
+		}
 	}
 
 	.colRight {
 		@media (min-width: 320px) {
 			padding-left: 0;
 			padding-right: 0;
+		}
+		@media (min-width: 992px) {
+			display: flex;
+			align-items: center;
 		}
 	}
 
@@ -114,8 +122,11 @@ const Section = styled.section`
 
 		@media (min-width: 992px) {
 			padding-left: 0;
-			position: relative;
-			top: -170px;
+			/* position: relative;
+			top: -170px; */
+			/* padding: 0 0 60px 50px; */
+			/* display: flex; */
+			/* align-items: center; */
 		}
 	}
 
@@ -133,20 +144,35 @@ const Section = styled.section`
 		}
 
 		@media (min-width: 992px) {
-			padding: 0 0 60px 50px;
-
+			padding: 0 0 0 50px;
 		}
 
 		.h1-size {
 			@media (min-width: 320px) {
 				margin-bottom: 40px;
 			}
+			@media (max-width: 768px) {
+				font-size: 40px;
+				line-height: 1.1;
+			}
+		}
+
+		.brMObile {
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+
+		.textCenter {
+			@media (max-width: 768px) {
+				text-align: center;
+			}
 		}
 
 		.app_store {
 			margin-bottom: 30px;
 			margin-top: 30px;
-			
+
 			@media (min-width: 320px) {
 				width: 220px;
 				margin-left: auto;
@@ -170,7 +196,6 @@ const Section = styled.section`
 		}
 
 		.play_store {
-			
 			@media (min-width: 320px) {
 				width: 220px;
 				margin-left: auto;
