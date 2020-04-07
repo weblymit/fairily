@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
+import TypeForm from './TypeForm';
 
 const SectionFairilyConcept = () => {
 	const data = useStaticQuery(graphql`
@@ -88,6 +89,18 @@ const SectionFairilyConcept = () => {
 								Découvrez une sélection décoration, objets design, <br className="mobile-move" /> bijoux
 								et accessoires.
 							</p>
+							<div>
+								<h2>Type form</h2>
+								<a
+									href="https://manonlavalley12.typeform.com/to/IYwny8"
+									className="btn btn-green mb-2"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Launch me Test new onglet
+								</a>
+								<TypeForm />
+							</div>
 						</div>
 					</div>
 				</div>

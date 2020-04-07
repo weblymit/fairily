@@ -14,6 +14,7 @@ import NewsLetter from '../components/NewsLetter';
 import SectionApp from '../components/SectionApp';
 import SEO from '../components/seo';
 import styled from 'styled-components';
+import SectionTypeForm from '../components/SectionTypeForm';
 
 class IndexPage extends React.Component {
 	render() {
@@ -23,6 +24,7 @@ class IndexPage extends React.Component {
 
 				<Div>
 					<SectionFairilyConcept />
+					{/* <SectionTypeForm /> */}
 					<SectionThreeHome />
 					<SectionFairilyShopper />
 					<SectionFairilyParcours />
