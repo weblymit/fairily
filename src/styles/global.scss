@@ -26,6 +26,11 @@ html {
     position: relative;
     left: 0px;
     bottom: -22px;
+
+    @media (min-width: 1500px) {
+      border-left: 300px solid #f2f4f3;
+
+    }
   }
 
 
@@ -36,6 +41,11 @@ html {
     left: 0px;
     bottom: -212px;
     // z-index: 1;
+
+    @media (min-width: 1500px) {
+      border-left: 300px solid #f2f4f3;
+
+    }
   }
 }
 
