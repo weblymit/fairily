@@ -130,6 +130,13 @@ const Section = styled.section`
 			width: calc(41vw);
 			margin-left: 70px;
 		}
+		@media (min-width: 1500px) {
+			position: relative;
+			top: 190px;
+			z-index: 1;
+			width: calc(32vw);
+			margin-left: 190px;
+		}
 	}
 
 	#parcour_block {
