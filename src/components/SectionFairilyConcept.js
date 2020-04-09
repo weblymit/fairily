@@ -89,17 +89,17 @@ const SectionFairilyConcept = () => {
 								Découvrez une sélection décoration, objets design, <br className="mobile-move" /> bijoux
 								et accessoires.
 							</p>
-							<div>
-								<h2>Type form</h2>
+							<div className="typeForm">
+								{/* <h2>Type form</h2> */}
 								<a
 									href="https://manonlavalley12.typeform.com/to/IYwny8"
-									className="btn btn-green mb-2"
+									className="btn btn-green"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									Launch me Test new onglet
+									nous aider
 								</a>
-								<TypeForm />
+								{/* <TypeForm /> */}
 							</div>
 						</div>
 					</div>
@@ -330,6 +330,11 @@ const Div = styled.div`
 					@media (max-width: 720px) {
 						padding-top: 30px;
 					}
+				}
+
+				.typeForm {
+					margin-bottom: 20px;
+					margin-top: 40px;
 				}
 			}
 		}
