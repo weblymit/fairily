@@ -97,7 +97,7 @@ const Section = styled.section`
 		}
 
 		@media (min-width: 992px) {
-					margin-left: 145px;
+			margin-left: 145px;
 		}
 
 		h2 {

@@ -112,7 +112,6 @@ const Section = styled.section`
 		padding-left: 0;
 		position: relative;
 		top: -70px;
-		/* overflow: hidden; */
 
 		@media (min-width: 320px) {
 			top: 0;
@@ -122,11 +121,6 @@ const Section = styled.section`
 
 		@media (min-width: 992px) {
 			padding-left: 0;
-			/* position: relative;
-			top: -170px; */
-			/* padding: 0 0 60px 50px; */
-			/* display: flex; */
-			/* align-items: center; */
 		}
 	}
 
@@ -200,10 +194,6 @@ const Section = styled.section`
 				width: 220px;
 				margin-left: auto;
 				margin-right: auto;
-			}
-
-			@media (min-width: 768px) {
-				/* width: 220px; */
 			}
 
 			@media (min-width: 992px) {

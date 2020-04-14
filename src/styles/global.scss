@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 
+  // Vertical line
   .vl {
     border-left: 1px solid $terracota;
     height: 55px;
@@ -11,6 +12,7 @@ html {
     bottom: 10px;
   }
 
+  // Horizental line
   .hl {
     border-left: 190px solid $terracota;
     height: 1px;
@@ -20,6 +22,7 @@ html {
     z-index: 1;
   }
 
+  // Horizental line2
   .hl2 {
     border-left: 220px solid $terracota;
     height: 1px;
@@ -33,7 +36,7 @@ html {
     }
   }
 
-
+  // Horizental line
   .hl3 {
     border-left: 200px solid #f2f4f3;
     height: 1px;
@@ -44,7 +47,6 @@ html {
 
     @media (min-width: 1500px) {
       border-left: 300px solid #f2f4f3;
-
     }
   }
 }

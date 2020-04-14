@@ -1,7 +1,9 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
+import SEO from '../components/seo';
+
+// import all section Component
 import SectionFairilyConcept from '../components/SectionFairilyConcept';
 import SectionThreeHome from '../components/sectionThreeHome';
 import SectionFairilyShopper from '../components/SectionFairilyShopper';
@@ -12,9 +14,6 @@ import SectionFairilyAvantage from '../components/SectionFairilyAvantage';
 import SectionFour from '../components/sectionFourHome';
 import NewsLetter from '../components/NewsLetter';
 import SectionApp from '../components/SectionApp';
-import SEO from '../components/seo';
-import styled from 'styled-components';
-import SectionTypeForm from '../components/SectionTypeForm';
 
 class IndexPage extends React.Component {
 	render() {
@@ -22,9 +21,8 @@ class IndexPage extends React.Component {
 			<Layout>
 				<SEO title="Fairily | Bienvenue chez Fairily" />
 
-				<Div>
+				<div>
 					<SectionFairilyConcept />
-					{/* <SectionTypeForm /> */}
 					<SectionThreeHome />
 					<SectionFairilyShopper />
 					<SectionFairilyParcours />
@@ -34,12 +32,10 @@ class IndexPage extends React.Component {
 					<SectionFour />
 					<NewsLetter />
 					<SectionApp />
-				</Div>
+				</div>
 			</Layout>
 		);
 	}
 }
 
 export default IndexPage;
-
-const Div = styled.div`/* padding: 0; */`;

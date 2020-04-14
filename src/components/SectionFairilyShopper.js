@@ -110,11 +110,6 @@ const Section = styled.section`
 	}
 
 	#block_community {
-		/* background-color: #fff;
-		padding: 75px 75px 100px;
-		margin-right: 10%;
-		margin-top: -170px; */
-
 		@media (min-width: 320px) {
 			background-color: #fff;
 			margin-top: 0;

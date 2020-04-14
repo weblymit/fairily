@@ -74,11 +74,6 @@ export default SectionFairilyFourImage;
 
 const Section = styled.section`
 	#box {
-		/* margin-left: 150px;
-		margin-right: 150px;
-		position: relative;
-		top: -180px; */
-
 		@media (min-width: 320px) {
 			margin-left: 0;
 			margin-right: 0;
@@ -93,14 +88,12 @@ const Section = styled.section`
 			padding: 0;
 		}
 		.container-img  {
-			/* max-width: 345px; */
 			margin-bottom: 45px;
 			@media (min-width: 992px) {
 				margin-left: auto;
 			}
 		}
 		.container-img-2  {
-			/* max-width: 345px; */
 			margin-bottom: 45px;
 		}
 

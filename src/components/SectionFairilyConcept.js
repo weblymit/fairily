@@ -2,9 +2,9 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import TypeForm from './TypeForm';
 
 const SectionFairilyConcept = () => {
+	// import two img in graphql
 	const data = useStaticQuery(graphql`
 		query {
 			img: file(relativePath: { eq: "img9.jpg" }) {
@@ -59,15 +59,7 @@ const SectionFairilyConcept = () => {
 				<div className="row" id="fairily_purpose">
 					<div className="col-md-6 col-img">
 						<div className="cont">
-							<Img
-								fluid={img1}
-								alt="fairily parcour"
-								id="img_parcour"
-								// imgStyle={{ objectFit: 'contain' }}
-								className="img-fluid"
-								// style={{ maxHeight: 'calc(50vh - 4rem)' }}
-								// imgStyle={{ objectFit: 'cover' }}
-							/>
+							<Img fluid={img1} alt="fairily parcour" id="img_parcour" className="img-fluid" />
 						</div>
 					</div>
 					<div className="col-md-6" id="fairily_purpose_contenu">
@@ -90,7 +82,6 @@ const SectionFairilyConcept = () => {
 								et accessoires.
 							</p>
 							<div className="typeForm">
-								{/* <h2>Type form</h2> */}
 								<a
 									href="https://manonlavalley12.typeform.com/to/IYwny8"
 									className="btn btn-green"
@@ -99,7 +90,6 @@ const SectionFairilyConcept = () => {
 								>
 									nous aider
 								</a>
-								{/* <TypeForm /> */}
 							</div>
 						</div>
 					</div>
@@ -111,7 +101,6 @@ const SectionFairilyConcept = () => {
 
 export default SectionFairilyConcept;
 const Div = styled.div`
-	/* padding: 80px 0; */
 	width: 100%;
 	padding-right: 85px;
 	padding-left: 15px;
@@ -126,7 +115,6 @@ const Div = styled.div`
 	#section_concept {
 		padding-top: 80px;
 		margin-top: 50px;
-		/* height: 200px; */
 
 		@media (max-width: 768px) {
 			.vl {
@@ -178,11 +166,6 @@ const Div = styled.div`
 		}
 
 		.cont {
-			/* max-height: 280px; */
-			/* height: 700px; */
-			/* position: relative;
-			top: -180px; */
-
 			@media (min-width: 320px) {
 				position: initial;
 				top: 0;
@@ -222,11 +205,6 @@ const Div = styled.div`
 		}
 
 		.col-img {
-			/* padding-left: 0;
-			height: 620px;
-			overflow: hidden; */
-			/* top: -300px; */
-
 			@media (min-width: 320px) {
 				top: initial;
 				height: auto;

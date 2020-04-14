@@ -55,8 +55,6 @@ const Section = styled.section`
 	}
 
 	.box-experience {
-		/* margin-left: 50px; */
-
 		@media (min-width: 320px) {
 			margin-left: 0;
 		}

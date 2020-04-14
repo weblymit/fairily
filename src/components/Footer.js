@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import img2 from '../images/img2.png';
 import imgFooter from '../images/footer_fee.svg';
 
-//font awesome
+//Impoert font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { fab, faTwitter, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faStar, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab, faTwitter, faLinkedin, faFacebook, faInstagram, faStar, faHeart);
+// End import FontAwesome
 
 const Footer = () => {
 	return (
